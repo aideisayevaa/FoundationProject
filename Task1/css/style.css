@@ -1,0 +1,179 @@
+@import 'grid.css';
+
+@font-face{
+    font-family: 'Kurale';
+    src: url(../fonts/Kurale-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background: rgba(99, 66, 7, 0.11);
+    color: #3f3f3f;
+    font: 14px / 28px;
+    font-family: 'Kurale' , arial;
+}
+
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.row1{
+    display: flex;
+}
+.row{
+    display: flex;
+    margin-top: 60px;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.logoImage{
+    display: block;
+    height: 70px;
+}
+
+.unor{
+    display: flex;
+}
+
+.menu{
+    float: right;
+}
+
+.menu li a{
+    display: block;
+    padding: 27px 15px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color:rgb(182, 107, 22);
+    transition: all .5s ease;
+}
+
+.menu li:hover a{
+    background: rgb(124, 57, 2);
+    color:white
+    
+}
+
+h1{
+    font-size: 52px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 20px;
+    color:rgba(53, 36, 7, 0.678);
+    font-weight: bold;
+}
+
+.bgPhoto{
+    height: 550px;
+    background: url('../img/bg.jpg') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+#mainCaption{
+    height: 550px;
+    background: rgba(0, 0, 0, .8);
+}
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+
+.featuresBody .container{
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.item{
+    position: relative; 
+    overflow: hidden; 
+    display: inline-block;
+    width: 80%;
+    vertical-align: top; 
+    display: inline-table;
+}
+
+.itemText{
+    float: right;
+    padding: 0 15px;
+}
+
+.df{
+    display: flex;
+    margin: 10px;
+}
+
+
+.filmPhoto{
+    width: 200px;
+    height: 200px;
+}
+
+.btnDetails{
+    display: block;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: rgb(197 109 9);
+    transition: all 0.5s ease 0s;
+    border-radius: 50px;
+    width: 44%;
+    padding: 4px;
+    float: right;
+}
+
+.btnDetails:hover {
+    background: rgba(124, 57, 2, 0.658);
+    color:white
+}
+
+#form{
+    margin-left: 80px;
+}
+
+.sectionArea{
+    height: 190px;
+    background: rgb(195 132 33 / 88%);
+    text-align: center;
+}
+
+footer .fa{
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    line-height: 50px;
+    transition: .3s ease;
+
+}
+
+footer .fa:hover{
+    color:rgba(88, 58, 0, 0.788);
+}
+
+.socialLinks li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.sectionArea .container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
