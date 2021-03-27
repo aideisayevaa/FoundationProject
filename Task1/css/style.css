@@ -22,6 +22,7 @@ body {
 }
 .row1{
     display: flex;
+    width: 100%;
 }
 .row{
     display: flex;
@@ -52,6 +53,7 @@ body {
     text-decoration: none;
     color:rgb(182, 107, 22);
     transition: all .5s ease;
+    border-radius: 14px;
 }
 
 .menu li:hover a{
@@ -68,7 +70,7 @@ h1{
 
 h3{
     font-size: 20px;
-    color:rgba(53, 36, 7, 0.678);
+    color: rgb(53 36 7 / 88%);
     font-weight: bold;
 }
 
@@ -120,6 +122,7 @@ h3{
 .filmPhoto{
     width: 200px;
     height: 200px;
+    margin-left: 40px;
 }
 
 .btnDetails{
@@ -129,9 +132,10 @@ h3{
     color: rgb(197 109 9);
     transition: all 0.5s ease 0s;
     border-radius: 50px;
-    width: 44%;
+    width: 58%;
     padding: 4px;
     float: right;
+    text-align: center;
 }
 
 .btnDetails:hover {
@@ -140,21 +144,44 @@ h3{
 }
 
 #form{
-    margin-left: 80px;
+    margin-left: 145px;
+}
+
+.btn{
+    display: block;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: rgb(197 109 9);
+    transition: all 0.5s ease 0s;
+    border-radius: 50px;
+    width: 19%;
+}
+
+.btn:hover {
+    background: rgba(124, 57, 2, 0.658);
+    color:white
 }
 
 .sectionArea{
     height: 190px;
-    background: rgb(195 132 33 / 88%);
+    width: 100%;
+    background: rgb(177 117 43);
     text-align: center;
 }
 
-footer .fa{
+
+.socialLinks .fa{
     font-size: 30px;
     color:rgb(255, 255, 255);
     line-height: 50px;
     transition: .3s ease;
+}
 
+.contact .fa{
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    line-height: 26px;
+    transition: .3s ease;
 }
 
 footer .fa:hover{
@@ -169,10 +196,7 @@ footer .fa:hover{
 
 .sectionArea .container{
     margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    border-top: inset;
 }
 
 
