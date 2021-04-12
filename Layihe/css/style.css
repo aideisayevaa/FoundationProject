@@ -1,0 +1,25 @@
+.navbar{
+    background: #000000db;
+    padding: 14px 0px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 6px;
+    padding: 15px 17px 15px 16px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.slider-photo{
+    background-repeat: no-repeat;
+    width: 100%;
+}
