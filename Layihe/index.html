@@ -5,53 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="img/logo-restaurant.png" alt="Logo">
-                    </div>
-                    <div class="col-6">
-                        <ul class="menu">
-                            <li>
-                                <a href="#">HOME</a>
-                            </li>
-                            <li>
-                                <a href="#">ABOUT</a>
-                            </li>
-                            <li>
-                                <a href="#">MENU</a>
-                            </li>
-                            <li>
-                                <a href="#">GALLERY</a>
-                            </li>
-                            <li>
-                                <a href="#">RESERVATIONS</a>
-                            </li>
-                            <li>
-                                <a href="#">LOCATION</a>
-                            </li>
-                        </ul>
+
+    <!-- Slider section start -->
+    <div class="slider">
+
+        <!-- header section start-->
+        <section id="header">
+            <div class="navbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="navbar-logo">
+                                <img src="img/logo-restaurant.png" alt="Logo">
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="nav">
+                                <ul class="nav-menu">
+                                    <li>
+                                        <a href="#">HOME</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ABOUT</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">MENU</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">GALLERY</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">RESERVATIONS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">LOCATION</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+
             </div>
+
+        </section>
+        <!-- header section end -->
+
+        <div class="slide">
             <div class="container-full">
                 <div class="row">
-                    <div class="col-12">
-                        <img src="img/silder1.jpg" alt="" class="slider-photo">
+                    <div class="col-1">
+                        <div class="slide-choose-left">
+                            <img src="img/btn-choose-left.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="slide-content">
+                            <!-- slide-content-... = slc-... -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="slc-logoIntro">
+                                            <img src="img/logo-intro.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="slc-welcomeText">
+                                            <h2>Welcome to restaurant</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="slc-decoration">
+                                            <img src="img/decoration-line.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="slc-mini-text">
+                                            <p>The Chef creates divine combinations</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="slide-choose-right">
+                            <img src="img/btn-choose-right.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <!-- Slider section end -->
+
 </body>
 
 </html>

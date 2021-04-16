@@ -1,25 +1,120 @@
-.navbar{
-    background: #000000db;
-    padding: 14px 0px;
-}
+/* header section start */
 
-.menu{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    line-height: 6px;
-    padding: 15px 17px 15px 16px;
-}
-
-.menu li a{
-    text-decoration: none;
+#header {
     color: white;
-}
-
-.slider-photo{
-    background-repeat: no-repeat;
+    position: absolute;
     width: 100%;
 }
+
+.navbar{
+    background: #000000db;
+    padding: 17px 0px;
+}
+
+.navbar-logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+   height: 100%;
+}
+
+.nav-menu{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.nav-menu li a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+}
+
+.nav-menu li :hover{
+    color: #c0a756;
+}
+
+/* header section end */
+
+/* Slider section start */
+
+.slider{
+   position: relative;
+}
+
+.slide{
+    background-image: url(../img/silder1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 65px 0;
+}
+
+.slide-choose-left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slide-choose-right{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.slide-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slc-logoIntro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.slc-welcomeText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 37px;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.slc-decoration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.slc-mini-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Slider section end */
