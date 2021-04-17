@@ -1,0 +1,146 @@
+/* header section start */
+
+#header {}
+
+.top-bar {
+    color: #9f9fa7;
+    font-size: 13px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.contact-info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #01a2a6;
+    margin-right: 11px;
+}
+
+.contact-info-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    color: #9f9fa7;
+}
+
+.social-links span {
+    margin-right: 14px;
+}
+
+.nav-bar {
+    padding: 28px 0;
+    ;
+}
+
+.header-logo {
+    height: 100%;
+}
+
+.nav {
+    height: 100%;
+}
+
+.nav-menu {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #3D3D47;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.nav-menu li :hover {
+    color: #01A2A6;
+}
+
+.search {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+/* header section end */
+
+#slider {}
+
+.slide {
+    background-image: url(../img/slide1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 177px;
+}
+
+.slide-text {
+    height: 100%;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.slide-text h2 {
+    width: 45%;
+    font-weight: 100;
+}
+
+.button-row {
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    outline: none;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    background: none;
+    border: 3px solid white;
+    color: white;
+    width: 80%;
+}
