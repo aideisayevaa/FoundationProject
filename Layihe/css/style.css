@@ -5,7 +5,7 @@
 }
 
 .navbar {
-    background: #000000db;
+    background: var(--black);
     padding: 17px 0px;
 }
 
@@ -19,13 +19,13 @@
 
 .nav-menu li a {
     padding: 0px 20px;
-    color: white;
+    color: var(--white);
     text-decoration: none;
     transition: all .3s ease;
 }
 
 .nav-menu li :hover {
-    color: #c0a756;
+    color: var(--gold)
 }
 
 /* header section end */
@@ -63,12 +63,13 @@
 
 .slc-mini-text {
     font-size: 20px;
-
     font-family: 'Libre Baskerville', serif;
     margin: 20px 0;
 }
 
 /* Slider section end */
+
+/* About section start */
 
 #about {
     padding: 60px 0;
@@ -84,13 +85,13 @@
 
 .about-headerText {
     font-size: 26px;
-    color: #383733;
+    color: var(--black);
 }
 
 .about-explanation {
     font-style: italic;
     font-size: 17px;
-    color: #777777;
+    color: var(--gray);
     margin: 49px 0 79px 0;
     line-height: 26px;
 
@@ -101,7 +102,7 @@
 }
 
 .abh-header {
-    color: #c0a756;
+    color: var(--gold);
     font-family: 'Great Vibes', cursive;
     font-size: 55px;
     margin-bottom: 27px;
@@ -114,12 +115,12 @@
 .abh-text {
     font-size: 17px;
     font-weight: 400;
-    color: #777777;
+    color: var(--gray);
     line-height: 32px;
 }
 
 .abh-text p b {
-    color: #c0a756;
+    color: var(--gold)
 }
 
 .abh-decoration {
@@ -135,3 +136,61 @@
 
     max-width: 530px;
 }
+
+/* About section end */
+
+
+/* Opening hours section start */
+
+#opening-hours {
+    margin-top: 50px;
+}
+
+.timetable {
+    background-image: url(../img/opening_hours.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 6px 0 36px 0;
+}
+
+.tt-header h3 {
+    font-size: 39px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.tt-item {
+    color: var(--gold);
+    font-family: 'Yellowtail', cursive;
+    font-size: 24px;
+}
+
+.tt-time {
+    text-align: center;
+
+}
+
+.tt-time h6 {
+    color: var(--gold);
+    font-family: 'Yellowtail', cursive;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.tt-time span {
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.tt-column img{
+    margin: 20px 0;
+}
+
+.tt-contact span {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+}
+
+/* Opening hours section end */

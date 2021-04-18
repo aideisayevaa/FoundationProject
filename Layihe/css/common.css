@@ -22,6 +22,17 @@
     align-items: center;
 }
 
+.text-align-center {
+    text-align: center;
+}
+
+:root {
+    --gold: #c0a756;
+    --gray: #777777;
+    --white: #ffffff;
+    --black: #000000;
+}
+
 .h100 {
     height: 100%;
 }
