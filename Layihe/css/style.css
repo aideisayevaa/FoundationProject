@@ -1,59 +1,43 @@
 /* header section start */
 
 #header {
-    color: white;
     position: absolute;
-    width: 100%;
 }
 
-.navbar{
+.navbar {
     background: #000000db;
     padding: 17px 0px;
 }
 
-.navbar-logo{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav{
-   height: 100%;
-}
-
-.nav-menu{
-    height: 100%;
+.nav-menu {
     list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1.5px;
 }
 
-.nav-menu li a{
+.nav-menu li a {
     padding: 0px 20px;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     transition: all .3s ease;
 }
 
-.nav-menu li :hover{
+.nav-menu li :hover {
     color: #c0a756;
 }
 
 /* header section end */
 
+
 /* Slider section start */
 
-.slider{
-   position: relative;
+.slider {
+    position: relative;
 }
 
-.slide{
+.slide {
     background-image: url(../img/silder1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,102 +45,49 @@
     padding: 65px 0;
 }
 
-.slide-choose-left{
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.slide-choose-right{
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.slide-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slc-logoIntro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slc-logoIntro {
     margin-top: 30px;
 }
 
-.slc-welcomeText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slc-welcomeText {
     font-family: 'Oswald', sans-serif;
     font-size: 37px;
-    color: white;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
-.slc-decoration{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slc-decoration {
     margin: 30px 0;
 }
 
-.slc-mini-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slc-mini-text {
     font-size: 20px;
-    color: white;
+
     font-family: 'Libre Baskerville', serif;
-    width: 100%;
     margin: 20px 0;
 }
 
 /* Slider section end */
 
-#about{
+#about {
     padding: 60px 0;
 }
 
-.about-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-decLine-left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-decLine-left {
     margin-left: 74px;
 }
 
-.about-decLine-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-decLine-right {
     margin-right: 74px;
 }
 
-.about-headerText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Cabin";
+.about-headerText {
     font-size: 26px;
     color: #383733;
 }
 
-.about-explanation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Cabin";
+.about-explanation {
     font-style: italic;
     font-size: 17px;
     color: #777777;
@@ -165,61 +96,42 @@
 
 }
 
-.about-explanation p{
+.about-explanation p {
     text-align: center;
 }
 
-.abh-header{
-    display: flex;
+.abh-header {
     color: #c0a756;
     font-family: 'Great Vibes', cursive;
     font-size: 55px;
-    justify-content: center;
     margin-bottom: 27px;
 }
 
-.abh-header h3{
+.abh-header h3 {
     font-weight: 100;
 }
 
-.abh-text{
-    font-family: "Cabin", sans-serif;
+.abh-text {
     font-size: 17px;
     font-weight: 400;
     color: #777777;
     line-height: 32px;
 }
 
-.abh-text p b{
+.abh-text p b {
     color: #c0a756;
 }
 
-.abh-decoration{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 58px 0;}
-
-.about-photo{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.abh-decoration {
+    margin: 58px 0;
 }
 
-.about-photo-right{
-    
+.about-photo-right {
+
     max-width: 500px;
 }
 
-.about-photo-right img{
-    width: 100%;
-}
+.about-photo-left {
 
-.about-photo-left{
-    
     max-width: 530px;
-}
-
-.about-photo-left img{
-    width: 100%;
 }

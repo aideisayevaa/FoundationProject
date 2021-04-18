@@ -1,5 +1,7 @@
 body {
     margin: 0px;
+    font-family: "Cabin", sans-serif;
+    color: white;
 }
 
 .container-full {
@@ -16,12 +18,19 @@ body {
     justify-content: space-between;
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6,p,span{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
     margin: 0;
     padding: 0;
 }
