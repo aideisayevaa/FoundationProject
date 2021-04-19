@@ -5,7 +5,7 @@
 }
 
 .navbar {
-    background: var(--black);
+    background: #000000bb;
     padding: 17px 0px;
 }
 
@@ -184,7 +184,7 @@
     font-weight: 700;
 }
 
-.tt-column img{
+.tt-column img {
     margin: 20px 0;
 }
 
@@ -194,3 +194,40 @@
 }
 
 /* Opening hours section end */
+
+/* Menu section start */
+
+#menu {
+    color: black;
+    background-image: url(../img/menu_left.jpg),url(../img/menu_right.jpg);
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+}
+
+.menu-header {
+    text-align: center;
+    color: #ad9037;
+    font-family: "Oswald", sans-serif;
+    font-size: 22px;
+}
+
+.menu-list ul {
+    list-style: none;
+}
+
+.menu-list ul li {
+    padding: 19px 39px 0 0;
+}
+
+.ingredient {
+    color: #676562;
+    font-size: 14px;
+}
+
+.price {
+    color: var(--gold);
+    font-style: italic;
+    float: right;
+}
+
+/* Menu section end */
