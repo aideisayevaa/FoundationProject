@@ -9,6 +9,7 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
 
+        <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,19 +21,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-7">
-                        <div class="contact-info">
+                        <div class="contact-info flex justify-content-around align-items-center">
                             <div class="col-4">
-                                <div class="location">
-                                    <div class="contact-info-icon">
+                                <div class="location flex justify-content-center align-items-center">
+                                    <div class="contact-info-icon flex justify-content-center align-items-center">
                                         <i class="fas fa-map-marker-alt"></i>
                                     </div>
-                                    <div class="contact-info-text">
+                                    <div class="contact-info-text flex justify-content-center align-items-center">
                                         <span>Brooklyn, NY 10036, United States</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="phone">
+                                <div class="phone flex justify-content-center align-items-center">
                                     <div class="contact-info-icon">
                                         <i class="fas fa-mobile-alt"></i>
                                     </div>
@@ -42,7 +43,7 @@
                                 </div>
                             </div>
                             <div class="col-5">
-                                <div class="email">
+                                <div class="email flex justify-content-center align-items-center">
                                     <div class="contact-info-icon">
                                         <i class="far fa-envelope"></i>
                                     </div>
@@ -55,7 +56,7 @@
                         </div>
                     </div>
                     <div class="col-1">
-                        <div class="social-links">
+                        <div class="social-links flex justify-content-around align-items-center">
                             <span><i class="fab fa-linkedin-in"></i></span>
                             <span><i class="fab fa-facebook-f"></i></span>
                             <span><i class="fab fa-google-plus-g"></i></span>
@@ -72,50 +73,57 @@
             <div class="container">
                 <div class="row">
                     <div class="col-3">
-                        <div class="header-logo">
+                        <div class="header-logo h100">
                             <img src="img/header-logo.png" alt="">
                         </div>
                     </div>
-                    <div class="col-5">
-                        <div class="nav">
-                            <ul class="nav-menu">
-                                <li>
-                                    <a href="#">HOME</a>
-                                </li>
-                                <li>
-                                    <a href="#">COURSES</a>
-                                </li>
-                                <li>
-                                    <a href="#">FEATURES</a>
-                                </li>
-                                <li>
-                                    <a href="#">SHORTCODES</a>
-                                </li>
-                                <li>
-                                    <a href="#">POST TYPES</a>
-                                </li>
-                                <li>
-                                    <a href="#">CONTACTS</a>
-                                </li>
-                            </ul>
+                    <div class="col-6">
+                        <div class="nav-bar-menu flex justify-content-between">
+                            <div class="col-10">
+                                <div class="nav h100">
+                                    <ul class="nav-menu flex justify-content-between align-items-center h100">
+                                        <li>
+                                            <a href="#">HOME</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">COURSES</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FEATURES</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SHORTCODES</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">POST TYPES</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CONTACTS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="search flex justify-content-center align-items-center h100">
+                                    <span><i class="fas fa-search"></i></span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="col-1">
-                        <div class="search">
-                            <span><i class="fas fa-search"></i></span>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- header section end -->
 
+    <!-- slider section start -->
     <section id="slider">
         <div class="slide">
-            <div class="container-full">
+            <div class="container">
                 <div class="row">
-                    <div class="slide-text">
+                    <div class="slide-text flex justify-content-start align-items-center h100">
                         <h2>
                             To have another
                             language is to possess
@@ -126,12 +134,16 @@
 
                 <div class="row">
                     <div class="col-4">
-                        <div class="button-row">
+                        <div class="button-row flex justify-content-around">
                             <div class="col-6">
-                                <button class="btn">SIGN UP NOW</button>
+                                <a href="#">
+                                    <button class="btn">SIGN UP NOW</button>
+                                </a>
                             </div>
                             <div class="col-6">
-                                <button class="btn">LEARN MORE</button>
+                                <a href="#">
+                                    <button class="btn">LEARN MORE</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -139,6 +151,8 @@
             </div>
         </div>
     </section>
+    <!-- slider section end -->
+
 </body>
 
 </html>

@@ -8,50 +8,15 @@
 }
 
 .contact-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 20px 0;
-
 }
 
 .contact-info-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #01a2a6;
     margin-right: 11px;
 }
 
-.contact-info-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.email {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .social-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 20px 0;
     color: #9f9fa7;
 }
@@ -62,23 +27,10 @@
 
 .nav-bar {
     padding: 28px 0;
-    ;
-}
-
-.header-logo {
-    height: 100%;
-}
-
-.nav {
-    height: 100%;
 }
 
 .nav-menu {
-    height: 100%;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-size: 14px;
 
 }
@@ -95,32 +47,26 @@
 }
 
 .search {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: black;
 }
 
 /* header section end */
 
-#slider {}
+/* slider section start */
+
 
 .slide {
     background-image: url(../img/slide1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 177px;
+    padding: 150px 0;
 }
 
 .slide-text {
-    height: 100%;
     font-size: 30px;
     color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    margin-left: 50px;
 }
 
 .slide-text h2 {
@@ -130,8 +76,7 @@
 
 .button-row {
     margin-top: 33px;
-    display: flex;
-    justify-content: space-around;
+    margin-left: 50px;
 }
 
 .btn {
@@ -144,3 +89,11 @@
     color: white;
     width: 80%;
 }
+
+.btn:hover{
+    border: 3px solid tomato;
+    color: white;
+    background-color: tomato;
+}
+
+/* slider section end */
