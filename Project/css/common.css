@@ -44,3 +44,7 @@
 .w100 {
     width: 100%;
 }
+
+.text-decoration-none{
+    text-decoration: none;
+}

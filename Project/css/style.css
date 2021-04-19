@@ -202,6 +202,7 @@
     background-image: url(../img/menu_left.jpg),url(../img/menu_right.jpg);
     background-repeat: no-repeat;
     background-position: top left, top right;
+    padding: 55px 40px 93px 40px;
 }
 
 .menu-header {
@@ -209,6 +210,10 @@
     color: #ad9037;
     font-family: "Oswald", sans-serif;
     font-size: 22px;
+}
+
+.menu-logo img{
+    margin-bottom: 55px;
 }
 
 .menu-list ul {
@@ -228,6 +233,32 @@
     color: var(--gold);
     font-style: italic;
     float: right;
+}
+
+.menu-line-left{
+    width: 94%;
+    margin: 32px 0 0 20px;
+}
+
+.menu-line-right{
+    margin: 29px 0 0 0;
+    width: 102%;
+}
+
+.btn{
+    border: 2px solid var(--gold);
+    font-size: 18px;
+    padding: 19px 30px;
+    color: #ad9037;
+    transition: .5s ease;
+    background-color: var(--white);
+    text-transform: uppercase;
+    font-family: 'Cabin';
+}
+
+.btn:hover {
+    background-color: var(--gold);
+    color: var(--white)
 }
 
 /* Menu section end */
