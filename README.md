@@ -1,7 +1,17 @@
 # Restaurant Project Template
-- [Template](http://jellydemos.com/html/elixir/index-multipage.html)
+- [Template link](http://jellydemos.com/html/elixir/index-multipage.html)
 
 
 ## Layihe haqqinda
 
-- Header, slider, about, menu hisselerinin html ve css kodlari tam, opening hours hissesi ise qismen yazildi
+- Layihenin ana sehifesinin HTML ve CSS kodlari tamamlanan hisseleri
+  - Header
+  - Slider
+  - About
+  - Menu
+
+- Qismen tamamlanan hisseleri
+  - Opening hours
+  - Testimonials
+
+Qeyd: Parallax movzusunu tam arasdirdiqdan sonra qismen yazilan hisseler tamamlanacaq
