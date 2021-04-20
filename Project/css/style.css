@@ -262,3 +262,58 @@
 }
 
 /* Menu section end */
+
+/* Testimonials section start */
+
+#testimonials{
+    background-image: url(../img/testimonials.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 54px 0;
+}
+
+.testimonials-header{
+    text-align: center;
+    color: #bfa760;
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+}
+
+.testimonials-decoration{
+    font-family: 'Bitter', serif;
+    font-weight: 700;
+    font-size: 72px;
+    color: #bfa760;
+}
+
+.testimonials-item{
+    color: #e2e9ed;
+    font-size: 25px;
+    line-height: 42px;
+    margin-left: 20px;
+}
+
+.testimonials-author{
+    color: var(--gold);
+    font-style: italic;
+    font-size: 20px;
+    margin: 25px 0 0 20px;
+}
+
+.testimonials-click-circle{
+    padding: 2px;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    margin: 3px;
+}
+
+
+.testimonials-click-circle :hover{
+    border: 2px solid var(--gold);
+    background-color: var(--gold);
+}
+
+/* Testimonials section end */
