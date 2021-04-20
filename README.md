@@ -4,4 +4,4 @@
 
 ## Layihe haqqinda
 
-- Header, slider ve about hisselerin html ve css kodlari tamamlandi
+- Header, slider, about, menu hisselerinin html ve css kodlari tam, opening hours hissesi ise qismen yazildi
