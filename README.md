@@ -4,14 +4,17 @@
 
 ## Layihe haqqinda
 
-- Layihenin ana sehifesinin HTML ve CSS kodlari tamamlanan hisseleri
+- Layihenin ana sehifesinin HTML ve CSS kodlari tamamlanan hisseleri:
   - Header
   - Slider
   - About
-  - Menu
-
-- Qismen tamamlanan hisseleri
   - Opening hours
+  - Menu
   - Testimonials
 
-Qeyd: Parallax movzusunu tam arasdirdiqdan sonra qismen yazilan hisseler tamamlanacaq
+- Layihenin ana sehifesinin kodlari hele yazilmamis hisseleri:
+  - Contact
+  - Map
+  - Footer
+
+ 
