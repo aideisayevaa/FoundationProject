@@ -11,7 +11,6 @@
 
 .nav-menu {
     list-style: none;
-    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -50,7 +49,6 @@
 }
 
 .slc-welcomeText {
-    font-family: 'Oswald', sans-serif;
     font-size: 37px;
     font-weight: 300;
     text-transform: uppercase;
@@ -63,7 +61,6 @@
 
 .slc-mini-text {
     font-size: 20px;
-    font-family: 'Libre Baskerville', serif;
     margin: 20px 0;
 }
 
@@ -75,35 +72,12 @@
     padding: 60px 0;
 }
 
-.about-decLine-left {
-    margin-left: 74px;
-}
-
-.about-decLine-right {
-    margin-right: 74px;
-}
-
-.about-headerText {
-    font-size: 26px;
+.about-header-text {
     color: var(--black);
-}
-
-.about-explanation {
-    font-style: italic;
-    font-size: 17px;
-    color: var(--gray);
-    margin: 49px 0 79px 0;
-    line-height: 26px;
-
-}
-
-.about-explanation p {
-    text-align: center;
 }
 
 .abh-header {
     color: var(--gold);
-    font-family: 'Great Vibes', cursive;
     font-size: 55px;
     margin-bottom: 27px;
 }
@@ -156,30 +130,21 @@
 
 .tt-header h3 {
     font-size: 39px;
-    font-family: "Oswald", sans-serif;
     font-weight: 700;
 }
 
 .tt-item {
     color: var(--gold);
-    font-family: 'Yellowtail', cursive;
     font-size: 24px;
-}
-
-.tt-time {
-    text-align: center;
-
 }
 
 .tt-time h6 {
     color: var(--gold);
-    font-family: 'Yellowtail', cursive;
     font-size: 40px;
     font-weight: 100;
 }
 
 .tt-time span {
-    font-family: "Oswald", sans-serif;
     font-size: 40px;
     font-weight: 700;
 }
@@ -189,7 +154,6 @@
 }
 
 .tt-contact span {
-    font-family: "Oswald", sans-serif;
     font-size: 14px;
 }
 
@@ -206,9 +170,7 @@
 }
 
 .menu-header {
-    text-align: center;
     color: #ad9037;
-    font-family: "Oswald", sans-serif;
     font-size: 22px;
 }
 
@@ -253,7 +215,6 @@
     transition: .5s ease;
     background-color: var(--white);
     text-transform: uppercase;
-    font-family: 'Cabin';
 }
 
 .btn:hover {
@@ -274,14 +235,11 @@
 }
 
 .testimonials-header {
-    text-align: center;
     color: #bfa760;
-    font-family: "Oswald", sans-serif;
     font-size: 25px;
 }
 
 .testimonials-decoration {
-    font-family: 'Bitter', serif;
     font-weight: 700;
     font-size: 72px;
     color: #bfa760;
@@ -325,36 +283,13 @@
     padding: 65px 0;
 }
 
-.contact-decLine-left {
-    margin-left: 74px;
-}
-
-.contact-decLine-right {
-    margin-right: 74px;
-}
-
-.contact-headerText {
-    font-size: 26px;
+.contact-header-text {
     color: var(--white);
-}
-
-.contact-explanation {
-    font-style: italic;
-    font-size: 17px;
-    color: var(--gray);
-    margin: 49px 0 79px 0;
-    line-height: 26px;
-
-}
-
-.contact-explanation p {
-    text-align: center;
 }
 
 .contact-form {
     border: none;
     padding: 26px;
-    width: 100%;
     margin: 20px;
     background-color: #2C2A2A;
     font-size: 17px;
@@ -383,7 +318,6 @@
     color: var(--white);
     transition: .5s ease;
     background-color: var(--gold);
-    font-family: 'Cabin';
     border: none;
     margin-top: 36px;
 }
@@ -394,14 +328,6 @@
 }
 
 /* Contact section end */
-
-/* Map section start */
-
-.map-photo img {
-    width: 100%;
-}
-
-/* Map section end */
 
 
 /* Footer section start */
@@ -414,7 +340,7 @@
 .socical-icons span {
     border: none;
     background-color: #3D3C38;
-    color: white;
+    color: var(--white);
     border-radius: 50%;
     padding: 10px 13px;
     margin: 6px;

@@ -30,13 +30,6 @@
     text-align: center;
 }
 
-:root {
-    --gold: #c0a756;
-    --gray: #777777;
-    --white: #ffffff;
-    --black: #000000;
-}
-
 .h100 {
     height:100%;
 }
@@ -48,3 +41,66 @@
 .text-decoration-none{
     text-decoration: none;
 }
+
+/* Colors */
+:root {
+    --gold: #c0a756;
+    --gray: #777777;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* Fonts */
+
+.first-font{
+    font-family: "Cabin", sans-serif;
+}
+
+.secondary-font{
+    font-family: 'Oswald', sans-serif;
+}
+
+.third-font{
+    font-family: 'Yellowtail', cursive;
+}
+
+.fourth-font{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fifth-font{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.sixth-font{
+    font-family: 'Great Vibes', cursive;
+}
+
+.seventh-font{
+    font-family: 'Bitter', serif;
+}
+
+/* Header */
+
+.first-heading{
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.first-heading-item{
+    font-style: italic;
+    font-size: 17px;
+    color: var(--gray);
+    margin: 49px 0 79px 0;
+    line-height: 26px;
+}
+
+.header-dec-left{
+    margin-left: 74px;
+}
+
+.header-dec-right{
+    margin-right: 74px;
+}
+
+/* Button */
