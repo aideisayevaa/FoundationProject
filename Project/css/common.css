@@ -42,11 +42,27 @@
     text-decoration: none;
 }
 
+/* Background */
+
+.background-no-repeat{
+    background-repeat: no-repeat;
+}
+
+.background-size-cover{
+    background-size: cover;
+}
+
+.background-position-center{
+    background-position: center center;
+}
+
 /* Colors */
 :root {
     --gold: #c0a756;
+    --dark-gold: #ad9037;
     --gray: #777777;
     --white: #ffffff;
+    --light-black: #141313;
     --black: #000000;
 }
 
@@ -103,4 +119,16 @@
     margin-right: 74px;
 }
 
-/* Button */
+/* Section */
+
+.section-padding{
+    padding: 90px 0;
+}
+
+.secondary-section-padding{
+    padding: 50px 0;
+}
+
+
+
+
