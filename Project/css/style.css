@@ -1,3 +1,5 @@
+/* Home Page Start */
+
 /* header section start */
 
 #header {
@@ -168,6 +170,10 @@
     padding: 19px 39px 0 0;
 }
 
+.meal{
+    color: var(--black);
+}
+
 .ingredient {
     color: var(--gray);
     font-size: 14px;
@@ -329,3 +335,22 @@
 }
 
 /* Footer section end */
+
+/* Home Page end */
+
+/* Menu Page Start */
+
+.category-header h2{
+    font-weight: 400;
+    color: #887025;
+    font-size: 51px;
+}
+
+.category-item{
+    color: #bfa760;
+    font-size: 23px;
+}
+
+.category-image{
+    margin-bottom: 24px;
+}
