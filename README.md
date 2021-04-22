@@ -18,6 +18,7 @@
 - HTML ve CSS kodlari qismen tamamlanan sehifeler:
   - About
   - Location
+  - Menu
 
 
 - Layihenin ana sehifesi asagidaki hisselerden ibaretdir:
