@@ -2,32 +2,31 @@
 
 /* header section start */
 
-#header {
+#home-header {
     position: absolute;
 }
 
-.navbar {
+.home-navbar {
     background: #000000bb;
-    padding: 17px 0px;
 }
 
-.nav-menu {
-    list-style: none;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
-
-.nav-menu li a {
-    padding: 0px 20px;
+.home-nav-menu li a {
     color: var(--white);
-    text-decoration: none;
-    transition: all .3s ease;
 }
 
-.nav-menu li :hover {
+.home-nav-menu li :hover {
     color: var(--gold)
 }
+
+.other-navbar {
+    background: white;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 11%);
+}
+
+.other-nav-menu li a {
+    color: var(--gray);
+}
+
 
 /* header section end */
 
@@ -343,6 +342,7 @@
 /* Footer section end */
 
 /* Home Page end */
+
 
 /* Menu Page Start */
 

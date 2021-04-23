@@ -96,6 +96,40 @@
     font-family: 'Bitter', serif;
 }
 
+/* Section */
+
+.section-padding{
+    padding: 90px 0;
+}
+
+.secondary-section-padding{
+    padding: 50px 0;
+}
+
+
+/* Header-section */
+
+.navbar {
+    padding: 17px 0px;
+}
+
+.nav-menu {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.nav-menu li a {
+    padding: 0px 20px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.nav-menu li :hover {
+    color: var(--gold)
+}
+
 /* Header */
 
 .first-heading{
@@ -118,17 +152,3 @@
 .header-dec-right{
     margin-right: 74px;
 }
-
-/* Section */
-
-.section-padding{
-    padding: 90px 0;
-}
-
-.secondary-section-padding{
-    padding: 50px 0;
-}
-
-
-
-
