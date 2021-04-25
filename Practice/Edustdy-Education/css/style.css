@@ -1,0 +1,104 @@
+/* Header section start */
+.header-top {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 1.2em 0;
+    font-size: 0.9em;
+}
+
+.header-top-info span {
+    margin: 0.3em;
+}
+
+.header-top-info span i {
+    margin: 0 0.5em;
+    color: var(--yellow);
+}
+
+.header-top-account p {
+    margin: 0 1.5em;
+}
+
+.top-account-btn {
+    padding: 0.5em 2em;
+}
+
+.header-navbar {
+    position: absolute;
+    background-color: none;
+    padding: 1.2em 0;
+    z-index: 2;
+    width: 100%;
+    border-bottom: 1px solid #5C6574;
+}
+
+.navbar-logo {
+    margin-left: 3.2em;
+}
+
+.navbar-menu ul {
+    list-style: none;
+}
+
+.navbar-menu ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    margin: 0 1.3em;
+}
+
+.navbar-search span {
+    color: var(--white);
+    font-size: 1.2em;
+    margin: 0 0.6em;
+}
+/* Header section end */
+
+/* Slider section start */
+
+.slide {
+    background-image: url(../img/slider-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #253756ba;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-content {
+    color: var(--white);
+    font-size: 1.9em;
+    font-weight: 500;
+    flex-direction: column;
+}
+
+.slc-header-text {
+    font-size: 1.6em;
+}
+
+.slc-header-text span{
+    color: var(--yellow);
+}
+
+.slc-item {
+    font-size: 0.6em;
+    margin: 1.5em;
+}
+
+.slc-btn{
+    padding: 1em 3em;
+    font-size: 0.5em;
+    font-family:'Poppins', sans-serif;
+}
+/* Slider section end */

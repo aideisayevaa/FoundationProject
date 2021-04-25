@@ -1,10 +1,12 @@
 body {
     margin: 0px;
-    font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container-full {
-    width: 100%;
+    width:100%;
 }
 
 .container {
@@ -29,8 +31,7 @@ h4,
 h5,
 h6,
 p,
-span,
-hr {
+span {
     margin: 0;
     padding: 0;
 }
