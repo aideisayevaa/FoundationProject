@@ -9,14 +9,7 @@
   - About
   - Menu
   - Gallery
-  - Reservations
   - Location
-  
-- HTML ve CSS kodlari tamamlanan sehifeler:
-   - Home
-   - About
-   - Location
-   - Menu
 
 
 - Layihenin ana sehifesi asagidaki hisselerden ibaretdir:
