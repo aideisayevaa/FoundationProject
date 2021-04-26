@@ -42,19 +42,6 @@
     text-decoration: none;
 }
 
-/* Background */
-
-.background-no-repeat{
-    background-repeat: no-repeat;
-}
-
-.background-size-cover{
-    background-size: cover;
-}
-
-.background-position-center{
-    background-position: center center;
-}
 
 /* Colors */
 :root {
@@ -81,5 +68,4 @@
     background-color: var(--red);
     color: var(--white);
 }
-
 
