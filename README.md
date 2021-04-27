@@ -20,7 +20,7 @@
   - Menu
   - Testimonials
   - Contact
-  - Map
+  - Location
   - Footer
 
-Qeyd: Ana sehifede map hissenin kodlari javascript ile yazilacaq. Kecici olaraq sekil yerlesdirildi.
+Qeyd: Ana sehifede location hissenin kodlari javascript ile yazilacaq. Kecici olaraq sekil yerlesdirildi.
