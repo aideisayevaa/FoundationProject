@@ -4,6 +4,9 @@
 
 ## Layihe haqqinda
 
+- Layihenin HTML ve CSS kodlari tamamlandi.
+
+
 - Layihenin terkibinde olan sehifeler:
   - Home
   - About
@@ -20,7 +23,5 @@
   - Menu
   - Testimonials
   - Contact
-  - Location
+  - Map
   - Footer
-
-Qeyd: Ana sehifede location hissenin kodlari javascript ile yazilacaq. Kecici olaraq sekil yerlesdirildi.
