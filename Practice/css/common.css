@@ -48,8 +48,10 @@
     --white: #ffffff;
     --dark-blue: #1b2945;
     --black: #000000;
+    --light-black: #252628;
     --red: #DE322E;
     --yellow:#F7C22B;
+    --dark-gray: #484848;
 }
 
 /* Button */

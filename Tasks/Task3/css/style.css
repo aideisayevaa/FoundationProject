@@ -1,0 +1,85 @@
+/* header section start */
+
+.navbar {
+    padding: 17px 0px;
+    background: #000000bb;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.nav-menu {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-menu li a {
+    color: var(--white);
+    padding: 0px 20px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.nav-menu li :hover {
+    color: var(--gold)
+}
+
+#nav-toggle {
+    position: absolute;
+    top: -160px;
+}
+
+.icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.icon-burger .fas {
+    font-size: 30px;
+    color: var(--gold);
+}
+/* header section end */
+
+
+/* Slider section start */
+
+#slider {
+    position: relative;
+}
+
+.slide {
+    background-image: url(../img/silder1.jpg);
+}
+
+.slc-logoIntro {
+    margin-top: 30px;
+}
+
+.slc-welcomeText {
+    font-size: 37px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.slc-decoration {
+    margin: 30px 0;
+}
+
+.slc-mini-text {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* Slider section end */
+
+

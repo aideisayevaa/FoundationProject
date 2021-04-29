@@ -1,22 +1,18 @@
 body {
     margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.container-full {
-    width:100%;
+    font-family: "Cabin", sans-serif;
+    color: white
 }
 
 .container {
-    width: 1150px;
+    width: 1200px;
     margin: 0 auto;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
+    
 }
 
 ul {
@@ -86,4 +82,8 @@ span {
 
 [class*="col-"] {
     padding: 0px;
+}
+
+.w100{
+    width: 100%;
 }

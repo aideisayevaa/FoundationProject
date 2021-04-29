@@ -1,0 +1,70 @@
+
+@media screen and (max-width: 576px) {
+    
+    .nav-menu {
+        display: none;
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 86px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #2b2b24be;
+        overflow: hidden;
+        transition: .5s ease;
+    }
+
+    .nav-menu li {
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid var(--gray);
+        cursor: pointer;
+    }
+
+    .nav-menu li a {
+        font-size: 18px;
+        color: var(--white);
+    }
+
+    .nav-menu li:hover a {
+        color: var(--dark-gold)
+        
+    }
+
+    input[type="checkbox"]:checked+.nav-menu {
+        display: block;
+    }
+
+    .icon-burger {
+        display: block;
+    }
+
+    .slc-welcomeText{
+        font-size: 25px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .container{
+        width: 100%;
+    }
+}
+
