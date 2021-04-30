@@ -196,6 +196,8 @@
 
 /* About section end */
 
+/* Counter section start */
+
 .counter-photo1 {
     border: 1px dashed #40D0AF;
 }
@@ -227,4 +229,57 @@
 
 .counter-item p {
     color: var(--dark-gray);
+}
+
+/* Counter section end */
+
+#secondary-about {}
+
+.about-video {
+    width: 100%;
+}
+
+.about-video img {
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.about-picture {}
+
+.about-content {
+    flex-direction: column;
+    color: var(--white);
+    background-color: var(--yellow);
+    padding: 0 2em;
+}
+
+.about-content h4 {}
+
+.about-content p {}
+
+.about-picture {
+    width: 100%;
+}
+
+.about-picture img {
+    width: 100%;
+}
+
+.secondary-about-btn {
+    background: none;
+    border: 2px solid var(--white);
+    color: white;
+    padding: 0.6em 1em;
+    border-radius: 2em;
+    width: 60%;
+    font-size: 0.8em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.secondary-about-btn:hover {
+    background-color: var(--white);
+    color: black;
 }
