@@ -86,6 +86,7 @@
 
 .slc-header-text {
     font-size: 1.6em;
+    letter-spacing: 2px;
 }
 
 .slc-header-text span {
@@ -105,10 +106,11 @@
 
 /* Slider section end */
 
+/* About section start */
+
 #about {
     position: relative;
     z-index: 1;
-    padding: 50px 0;
 }
 
 .shape-1 {
@@ -188,8 +190,41 @@
 
 .about-3 {
     position: absolute;
-    /* bottom: -27em;
-    right: 1em; */
     top: 15em;
     right: 1em;
+}
+
+/* About section end */
+
+.counter-photo1 {
+    border: 1px dashed #40D0AF;
+}
+
+.counter-photo2 {
+    border: 1px dashed #FCC741;
+}
+
+.counter-photo3 {
+    border: 1px dashed #DE322E;
+}
+
+.counter-photo4 {
+    border: 1px dashed #3D84C8;
+}
+
+.counter-item {
+    z-index: 3;
+    height: 4em;
+    background-color: var(--white);
+    margin: 0.7em 0 0 -1em;
+}
+
+.counter-item span {
+    color: var(--dark-blue);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.counter-item p {
+    color: var(--dark-gray);
 }

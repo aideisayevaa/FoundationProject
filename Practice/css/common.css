@@ -71,3 +71,16 @@
     color: var(--white);
 }
 
+/* Section padding */
+
+.section-padding{
+    padding: 3em 0;
+}
+
+
+.counter-photo {
+    padding: 1em;
+    width: 4.5em;
+    border-radius: 0.5em;
+    z-index: 2;
+}
