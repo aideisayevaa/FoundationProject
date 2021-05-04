@@ -356,6 +356,13 @@
     height: 500px;
 }
 
+
+#programes-container{
+    position: absolute;
+    left: 6em;
+    top: 6em;
+}
+
 .programes-title {
     flex-direction: column;
     text-align: center;
@@ -363,9 +370,14 @@
     color: var(--white);
 }
 
-.programes-title h2 {}
+.programes-title h2 {
+    font-size: 1.5em;
+}
 
-.programes-title {}
+.programes-title p{
+    font-size: 0.6em;
+    margin: 0.4em 0 1.8em 0;
+}
 
 .programe-container {
     display: grid;
@@ -412,5 +424,21 @@
     color: var(--dark-blue);
     font-size: 1.5em;
     background-color: white;
-    padding: 1em 0;
+}
+
+#why-choose{
+    background: url(../img/choose_bg.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.why-choose-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.why-choose-item:nth-child(1){
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
 }
