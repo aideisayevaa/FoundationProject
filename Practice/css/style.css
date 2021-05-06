@@ -204,6 +204,12 @@
     right: 5%;
 }
 
+.shape-5{
+    position: absolute;
+    top: 30px;
+    right: 30%;
+}
+
 .about-item {
     width: 80%;
 }
@@ -347,6 +353,7 @@
 
 /* Secondary about section end */
 
+/* Programes section start */
 #programes {
     background-image: url(../img/bg_shape.jpg);
     background-position: center center;
@@ -357,7 +364,7 @@
 }
 
 
-#programes-container{
+#programes-container {
     position: absolute;
     left: 6em;
     top: 6em;
@@ -374,7 +381,7 @@
     font-size: 1.5em;
 }
 
-.programes-title p{
+.programes-title p {
     font-size: 0.6em;
     margin: 0.4em 0 1.8em 0;
 }
@@ -426,13 +433,16 @@
     background-color: white;
 }
 
-#why-choose{
+/* Programes section end */
+
+/* Why choose us section start */
+#why-choose {
     background: url(../img/choose_bg.png);
-    background-size: cover ;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.why-choose-content{
+.why-choose-content {
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -440,11 +450,58 @@
     gap: 2em;
 }
 
-.why-choose-item:nth-child(1){
+.why-choose-item:nth-child(1) {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
 
-.why-choose-title h2{
+.why-choose-title h2 {
     font-size: 3em;
+}
+
+/* Why choose us section end */
+
+#courses {
+    background-color: #F3F8FC;
+    position: relative;
+}
+
+.courses-title h2 {
+    font-size: 3em;
+    color: var(--dark-blue);
+}
+
+.courses-title p {
+    font-size: 1em;
+    color: var(--dark-gray);
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    height: 300px;
+}
+
+.course {
+    border-radius: 5px;
+}
+
+
+.course-item {
+    background: white;
+    padding: 1em;
+}
+
+.course img {
+    border-radius: 5px;
+}
+
+.course-author img {
+    border-radius: 50%;
+}
+
+.course p {
+    color: var(--dark-blue);
+    font-weight: bold;
 }
