@@ -392,8 +392,6 @@
     grid-template-rows: repeat(2, 1fr);
 }
 
-.programe {}
-
 .programe-icon {
     padding: 2em 0;
 }
@@ -461,6 +459,8 @@
 
 /* Why choose us section end */
 
+/* Courses section start */
+
 #courses {
     background-color: #F3F8FC;
     position: relative;
@@ -508,7 +508,6 @@
     margin-right: 1em;
 }
 
-.course-author h5 {}
 
 .course p {
     color: var(--dark-blue);
@@ -530,3 +529,48 @@
     border-radius: 7px;
     color: white;
 }
+
+/* Courses section end */
+
+/* Testimonials section start */
+
+#testimonials {
+    background-image: url(../img/testimonial_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonials-overlay {
+    background-color: rgba(27, 41, 69, 0.9);
+    padding: 9em 6em;
+}
+
+.testimonailas-content h3 {
+    color: var(--white);
+    font-size: 2.6em;
+    letter-spacing: 2px;
+}
+
+.author-profile img {
+    border-radius: 50%;
+    margin: 0.3em;
+}
+
+.author-feedback {
+    color: var(--white);
+    font-size: 1.2em;
+    background-color: rgb(255 255 255 / 20%);
+    padding: 1em 2em;
+    border-radius: 0 34px;
+}
+
+.author-feedback p {
+    font-style: italic;
+}
+
+.author-feedback h6 {
+    letter-spacing: 1px;
+}
+
+/* Testimonials section end */
