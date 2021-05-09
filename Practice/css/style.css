@@ -396,31 +396,6 @@
     padding: 2em 0;
 }
 
-.programe-icon-1 {
-    background-color: #48CFAF;
-}
-
-.programe-icon-2 {
-    background-color: #FCC741;
-}
-
-.programe-icon-3 {
-    background-color: #DE322E;
-}
-
-.programe-icon-4 {
-    background-color: #3D84C8;
-}
-
-.programe-icon-5 {
-    background-color: #BE20C5;
-}
-
-.programe-icon-6 {
-    background-color: #01C15B;
-}
-
-
 .programe-item {
     display: flex;
     justify-content: center;
@@ -574,3 +549,33 @@
 }
 
 /* Testimonials section end */
+
+/* Teachers section start */
+
+.teachers-title h2 {
+    font-size: 3em;
+    color: var(--dark-blue);
+}
+
+.teachers-title p {
+    font-size: 1em;
+    color: var(--dark-gray);
+    margin: 1em 0 3em 0;
+}
+
+.teachers-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.teachers-item {
+    flex-direction: column;
+    color: white;
+}
+
+.teachers-item img {
+    height: 100%;
+}
+
+/* Teachers section end */

@@ -88,3 +88,29 @@
     border-radius: 0.5em;
     z-index: 2;
 }
+
+
+/* Background color */
+.bg-color-1 {
+    background-color: #48CFAF;
+}
+
+.bg-color-2 {
+    background-color: #FCC741;
+}
+
+.bg-color-3 {
+    background-color: #DE322E;
+}
+
+.bg-color-4 {
+    background-color: #3D84C8;
+}
+
+.bg-color-5 {
+    background-color: #BE20C5;
+}
+
+.bg-color-6 {
+    background-color: #01C15B;
+}
