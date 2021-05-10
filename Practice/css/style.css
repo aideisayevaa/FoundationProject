@@ -567,6 +567,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    position: relative;
 }
 
 .teachers-item {
@@ -577,5 +578,42 @@
 .teachers-item img {
     height: 100%;
 }
+
+.teachers-item h6{
+    font-size: 1.2em;
+}
+
+.teachers-item span{
+    font-size: 0.9em;
+}
+
+.left-1 {
+    position: absolute;
+    top: 22%;
+    left: 21%;
+}
+
+.left-2 {
+    position: absolute;
+    top: 22%;
+    right: 20%;
+}
+
+.right-1 {
+    position: absolute;
+    bottom: 22%;
+    left: 21%;
+}
+
+.right-2 {
+    position: absolute;
+    bottom: 22%;
+    right: 21%;
+}
+
+.teachers-socical-links .fab{
+    margin: 10px 4px;
+}
+
 
 /* Teachers section end */
