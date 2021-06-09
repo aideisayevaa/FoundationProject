@@ -6,7 +6,7 @@ let b=prompt('Sonuncu ededi daxil edin :')
 if(typeof(c)==NaN){
     alert('Daxil edilən dəyər səhvdir')
 }
-else{
+else{g
     alert('Daxil edilən dəyər duzdur')
 }
 

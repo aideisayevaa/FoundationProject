@@ -1,4 +1,5 @@
 let a = prompt('Bali daxil edin : ')
+console.log(typeof(a))
 if( a>70 && a<=100){
     alert('Möhtəşəm')
 }
