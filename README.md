@@ -1,27 +1,5 @@
-# Restaurant Project Template
-- [Template link](http://jellydemos.com/html/elixir/index-multipage.html)
-
-
-## Layihe haqqinda
-
-- Layihenin HTML ve CSS kodlari tamamlandi.
-
-
-- Layihenin terkibinde olan sehifeler:
-  - Home
-  - About
-  - Menu
-  - Gallery
-  - Location
-
-
-- Layihenin ana sehifesi asagidaki hisselerden ibaretdir:
-  - Header
-  - Slider
-  - About
-  - Opening hours
-  - Menu
-  - Testimonials
-  - Contact
-  - Map
-  - Footer
+# Aidə İsayeva
+## Haqqımda qısa məlumat
+- Tədrisə başladığım tarix : 15 Mart 2021
+- Tədrisi başa vurduğum tarix :
+- Tədris müddətində hədəflədiyim layihə şablon(ları) :[Şablon](http://jellydemos.com/html/elixir/index-multipage.html)
