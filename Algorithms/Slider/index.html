@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div id="slider" class="w100">
+        <div class="slide">
+            <div class="slide-img w100">
+                <img src="img/1.jpg" alt="" class="w100">
+            </div>
+            <div class="inner w100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="slider-arrows" >
+                                <span onclick='goPrev()'><</span>
+                            </div>
+                        </div>
+                        <div class="col-8 flex justify-content-center">
+                            <div class="slider-item">
+                                <div class="slider-text">
+                                    <h3>Los Angeles</h3>
+                                    <span>We love the Big Apple!</span>
+                                </div>
+                                <div class="slider-choose">
+                                    <div class="slider-choose-circle"></div>
+                                    <div class="slider-choose-circle"></div>
+                                    <div class="slider-choose-circle"></div>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="slider-arrows flex justify-content-end" onclick='goNext()'>
+                                <span>></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
