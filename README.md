@@ -11,7 +11,7 @@
     - 24.06.2021
 
 
-- Week12 Task1 yerine yetirdim
-    - [Kodlar](https://github.com/aideisayevaa/PragmatechFoundationProject/tree/main/Algorithms)
-    - Tapsirigin helli ucun iki ferqli alqoritm hell etdim. Bunlardan birincisinde, yeni [BackgroundChanges]()-de 3 button vasitesile arxa fonun deyisdirilmesini temin etdim. Ikincisinde ise: [BasicSlider]()-de sade bir slider numunesi hazirladim. 
+- Week12-Task1 yerine yetirdim
+    - [Kodlar](https://github.com/aideisayevaa/PragmatechFoundationProject/tree/main/Algorithms/Task(29.06.21))
+    - Tapsirigin helli ucun iki ferqli alqoritm hell etdim. Bunlardan birincisinde, yeni [BackgroundChange](https://github.com/aideisayevaa/PragmatechFoundationProject/tree/main/Algorithms/Task(29.06.21)/BackgroundChange)-de 3 button vasitesile arxa fonun deyisdirilmesini temin etdim. Ikincisinde ise: [BasicSlider](https://github.com/aideisayevaa/PragmatechFoundationProject/tree/main/Algorithms/Task(29.06.21)/BasicSlider)-de sade bir slider numunesi hazirladim. 
     - 28.06.2021
