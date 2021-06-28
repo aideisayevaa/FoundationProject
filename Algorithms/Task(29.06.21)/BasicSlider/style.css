@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider {
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 600px;
+}
+
+.slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 800px;
+}
+
+.btn {
+    background: none;
+    border: 1px solid #565a61;
+    padding: 15px 26px;
+    transition: all .3s ease;
+    border-radius: 50%;
+    font-size: 2em;
+    cursor: pointer;
+    color: #476982;
+}
+
+.btn:hover {
+    background: rgba(77, 73, 73, 0.438);
+    color: white
+}
+
+.prevBtn{
+    position: absolute;
+    left: 2%;
+    top: 50%;
+}
+
+.nextBtn{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+}
+
+.sliderButtons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
