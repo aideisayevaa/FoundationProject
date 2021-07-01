@@ -4,6 +4,7 @@
 
 #home-header {
     position: absolute;
+    z-index: 2;
 }
 
 .home-navbar {
@@ -35,12 +36,12 @@
 
 /* Slider section start */
 
-#slider {
-    position: relative;
-}
-
-.slide {
-    background-image: url(../img/silder1.jpg);
+.slide-background img{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
 }
 
 .slc-logoIntro {

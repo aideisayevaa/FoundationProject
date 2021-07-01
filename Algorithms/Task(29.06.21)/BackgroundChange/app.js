@@ -1,5 +1,3 @@
-/* let txt=document.querySelector('.fadeTxt p')
-let elem=document.querySelector('.fadeTxt') */
 let red=document.querySelector('.btnRed')
 let blue=document.querySelector('.btnBlue')
 let purple=document.querySelector('.btnPurple')

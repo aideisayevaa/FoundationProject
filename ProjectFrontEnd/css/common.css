@@ -42,6 +42,10 @@
     text-decoration: none;
 }
 
+.cursor-pointer{
+    cursor: pointer;
+}
+
 /* Background */
 
 .background-no-repeat {
