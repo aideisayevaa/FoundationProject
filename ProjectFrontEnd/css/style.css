@@ -106,7 +106,46 @@
 
     max-width: 530px;
 }
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
 
+.manual-btn{
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: gray;
+}
+
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
 /* About section end */
 
 
@@ -114,6 +153,11 @@
 
 .timetable {
     background-image: url(../img/opening_hours.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .tt-header h3 {
@@ -224,6 +268,11 @@
 
 #testimonials {
     background-image: url(../img/testimonials.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .testimonials-header {
@@ -252,16 +301,17 @@
 }
 
 .testimonials-click-circle {
-    padding: 2px;
+    padding: 6px;
     border: 2px solid var(--gold);
     border-radius: 50%;
-    height: 5px;
-    width: 5px;
-    margin: 3px;
+    height: 13px;
+    width: 13px;
+    margin: 4px;
+    cursor: pointer;
 }
 
 
-.testimonials-click-circle :hover {
+.testimonials-click-circle:hover {
     border: 2px solid var(--gold);
     background-color: var(--gold);
 }
