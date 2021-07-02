@@ -15,3 +15,7 @@
     - [Kodlar](https://github.com/aideisayevaa/PragmatechFoundationProject/tree/main/Algorithms/Task(29.06.21))
     - Tapsirigin helli ucun iki ferqli alqoritm hell etdim. Bunlardan birincisinde, yeni [BackgroundChange](https://github.com/aideisayevaa/PragmatechFoundationProject/tree/main/Algorithms/Task(29.06.21)/BackgroundChange)-de 3 button vasitesile arxa fonun deyisdirilmesini temin etdim. Ikincisinde ise: [BasicSlider](https://github.com/aideisayevaa/PragmatechFoundationProject/tree/main/Algorithms/Task(29.06.21)/BasicSlider)-de sade bir slider numunesi hazirladim. 
     - 28.06.2021
+
+- Layiheme parallax elave etdim
+    - [Kodlar](https://github.com/aideisayevaa/PragmatechFoundationProject/tree/main/ProjectFrontEnd)
+    - 02.06.2021
