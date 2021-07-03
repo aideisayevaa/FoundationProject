@@ -36,7 +36,7 @@
 
 /* Slider section start */
 
-.slide-background img{
+.slide-background img {
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -106,7 +106,8 @@
 
     max-width: 530px;
 }
-.navigation-manual{
+
+.navigation-manual {
     position: absolute;
     width: 800px;
     margin-top: -40px;
@@ -114,7 +115,7 @@
     justify-content: center;
 }
 
-.manual-btn{
+.manual-btn {
     border: 2px solid gray;
     padding: 5px;
     border-radius: 10px;
@@ -122,30 +123,31 @@
     transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 40px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
     background: gray;
 }
 
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked~.first {
     margin-left: -20%;
 }
 
-#radio3:checked ~ .first{
+#radio3:checked~.first {
     margin-left: -40%;
 }
 
-#radio4:checked ~ .first{
+#radio4:checked~.first {
     margin-left: -60%;
 }
+
 /* About section end */
 
 
@@ -287,6 +289,11 @@
 }
 
 .testimonials-item {
+    transition: 2s;
+    display: none;
+}
+
+.testimonials-text {
     color: var(--white);
     font-size: 25px;
     line-height: 42px;
@@ -300,21 +307,28 @@
     margin: 25px 0 0 20px;
 }
 
-.testimonials-click-circle {
-    padding: 6px;
-    border: 2px solid var(--gold);
-    border-radius: 50%;
-    height: 13px;
-    width: 13px;
-    margin: 4px;
-    cursor: pointer;
+.testimonials-circles {
+    text-align: center;
+    padding: 20px;
 }
 
+.testimonials-circle {
+    border: solid 2px var(--gold);
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background: none;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
 
-.testimonials-click-circle:hover {
-    border: 2px solid var(--gold);
+.testimonials-circle-active,
+.testimonials-circle:hover {
     background-color: var(--gold);
 }
+
 
 /* Testimonials section end */
 
@@ -452,7 +466,7 @@
     height: 100%;
 }
 
-.gallery-navbar ul li:hover a{
+.gallery-navbar ul li:hover a {
     border-bottom: 2px solid var(--gold);
 }
 
