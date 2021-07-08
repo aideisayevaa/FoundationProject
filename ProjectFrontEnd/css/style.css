@@ -36,24 +36,56 @@
 
 /* Slider section start */
 
+.slide-background{
+    transition: all .3s ease;
+}
 .slide-background img {
     width: 100%;
     position: absolute;
     z-index: 1;
     left: 0px;
     top: 0px;
+    transition: all .3s ease;
 }
 
 .slc-logoIntro {
     margin-top: 30px;
 }
 
-.slc-welcomeText {
+.slc-welcomeText h2{
     font-size: 37px;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 4px;
+    display: none;
 }
+
+.slc-welcomeText h2.text-in{
+	display: block;
+	animation: textIn .5s ease;
+}
+.slc-welcomeText h2.text-out{
+	animation: textOut .5s ease;
+}
+
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+/* @keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+} */
+
 
 .slc-decoration {
     margin: 30px 0;
