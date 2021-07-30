@@ -1,6 +1,6 @@
 menu=""" 
-1- Qeydiyyatdan keçmək üçün 1 daxil edin+
-2- Sistemə daxil olmaq üçün 2 daxil edin
+Qeydiyyatdan keçmək üçün 1 daxil edin
+Sistemə daxil olmaq üçün 2 daxil edin
  """
 istifadeciler=[]
 class Istifadeci:
@@ -48,6 +48,11 @@ def daxilOl():
             else:
                 print('Daxil olunan melumat yanlisdir')
 
+
+def menuGoster():
+    print(menu)
+
+menuGoster()
 
 while True:
     emr=input("Nomre daxil edin: ")
