@@ -464,6 +464,7 @@
 
 /* Gallery Page start */
 
+
 #gallery {
     background-color: var(--light-black);
 }
@@ -472,17 +473,17 @@
     color: var(--white);
 }
 
-.gallery-navbar ul li {
+.btn-gallery {
     list-style: none;
 }
 
-.gallery-navbar li a {
+/* .gallery-navbar .btn-gallery a {
     text-decoration: none;
     color: var(--white);
     margin: 0 25px;
     padding: 5px 0;
     transition: all .3s step-end;
-}
+} */
 
 .gallery-photos {
     display: grid;
@@ -498,7 +499,7 @@
     height: 100%;
 }
 
-.gallery-navbar ul li:hover a {
+.gallery-navbar .btn-gallery:hover a {
     border-bottom: 2px solid var(--gold);
 }
 
@@ -518,4 +519,7 @@
     display: block;
 }
 
+.gallery-show{
+    display: block;
+}
 /* Gallery Page end */
