@@ -53,7 +53,7 @@ class UniverstyStudent(Student):
         self.university = universty 
 
 
-u_student_1=UniverstyStudent('arin',22,[10,20,30],"ITU")
+u_student_1=UniverstyStudent('arin',22,[10,20,30],"DIA")
 #sub classin komekliyile parent classin deyerlerine elimiz catir amma tersi yox
 print(u_student_1.university)
 print(u_student_1.average())
