@@ -3,8 +3,6 @@
 - Tədrisə başladığım tarix : 15 Mart 2021
 - Tədrisi başa vurduğum tarix :
 - Tədris müddətində hədəflədiyim layihə şablon(ları) :[Şablon](http://jellydemos.com/html/elixir/index-multipage.html)
-- [Hackerrank profilim](https://www.hackerrank.com/aidaisayeva)
-- [Eolymp profilim](https://www.e-olymp.com/az/users/isayeva_a)
 
 ## Tədris müddətində gördüyüm işlər
 
@@ -35,4 +33,8 @@
     - [Kodlar](https://github.com/aideisayevaa/PragmatechFoundationProject/blob/main/Algorithms/eolymp/app.py)
     - 902,903,905,906
     - 31.07.2021
+
+- Week 16 tapsirigi yerine yetirildi
+    - [Kodlar](https://github.com/aideisayevaa/PragmatechFoundationProject/tree/main/Works/Python/Task(week16))
+    - 21.08.2021
 
