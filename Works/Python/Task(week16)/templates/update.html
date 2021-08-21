@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+    <title>Update</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/create_book" class="choose-btn nav-link">Create Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/show" class="choose-btn nav-link">Show Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin" class="choose-btn nav-link">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+       <div class="row">
+           <div class="col-12">
+               <h1>Update Blog</h1>
+               <form action="/update/{{data.id}}" methods="POST">
+
+                <div class="form-group mt-3">
+                    <label for="" class="form-label">Title</label>
+                    <input type="text" name="title" value={{data.Name}} class="form-control">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="" class="form-label">Title</label>
+                    <input type="text" name="title" value={{data.Author}} class="form-control">
+                </div><div class="form-group mt-3">
+                    <label for="" class="form-label">Title</label>
+                    <input type="text" name="title" value={{data.Year}} class="form-control">
+                </div><div class="form-group mt-3">
+                    <label for="" class="form-label">Title</label>
+                    <input type="text" name="title" value={{data.Number}} class="form-control">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="" class="form-label">Title</label>
+                    <input type="text" name="title" value={{data.Summary}} class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+               </form>
+           </div>
+       </div> 
+    </div>
+</body>
+</html>

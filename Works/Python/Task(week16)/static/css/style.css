@@ -1,0 +1,8 @@
+.choose-btn{
+    text-decoration: none;
+    color: black;
+}
+
+.choose-btn:hover{
+    color: white;
+}
