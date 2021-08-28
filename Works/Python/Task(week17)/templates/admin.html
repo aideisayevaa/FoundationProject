@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+    <title>Admin</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/show" class="choose-btn nav-link">Show All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin" class="choose-btn nav-link">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Delete</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for news in News %}
+                        <tr>
+                            <td>{{news.news_title}}</td>
+                            <td>{{news.news_desc}}</td>
+                            <td><button class="btn btn-primary"><a href="/delete/{{news.news_id}}"
+                                        class="text-decoration-none text-white">Delete</a></button></td>
+                        </tr>
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-danger"><a href="/create_news" class="text-decoration-none text-white"><h6>Add New News</h6></a></button>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
