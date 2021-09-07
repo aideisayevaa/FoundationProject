@@ -22,6 +22,10 @@
     justify-content: space-around;
 }
 
+.flex-direction-column{
+    flex-direction: column;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -117,26 +121,6 @@
 
 /* Header-section */
 
-.navbar {
-    padding: 17px 0px;
-}
-
-.nav-menu {
-    list-style: none;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
-
-.nav-menu li a {
-    padding: 0px 20px;
-    text-decoration: none;
-    transition: all .3s ease;
-}
-
-.nav-menu li :hover {
-    color: var(--gold)
-}
 
 /* Header */
 

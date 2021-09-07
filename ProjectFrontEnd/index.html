@@ -26,10 +26,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
@@ -142,120 +144,61 @@
     <!-- About section start -->
     <section id="about" class="section-padding">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="about-header flex justify-content-center align-items-center">
-                        <div class="col-1">
-                            <div class="header-dec-left flex justify-content-center align-items-center">
-                                <img src="img/about-decoration-line.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="about-header-text first-heading flex justify-content-center align-items-center">
-                                <h3>ABOUT US</h3>
-                            </div>
-                        </div>
-                        <div class="col-1">
-                            <div class="header-dec-right flex justify-content-center align-items-center">
-                                <img src="img/about-decoration-line.png" alt="">
-                            </div>
-                        </div>
+            <div class="about">
+                <div class="about-header">
+                    <div class="about-title flex justify-content-center align-items-center">
+                        <img src="img/about-decoration-line.png" alt="">
+                        <h3 class="first-heading">ABOUT US</h3>
+                        <img src="img/about-decoration-line.png" alt="">
+                    </div>
+                    <p class="first-heading-item flex justify-content-center align-items-center text-align-center">We
+                        love restaurants as much as you do. That’s why we’ve been helping them fill <br>tables
+                        since
+                        1999.
+                        Welcome to elixir restaurant</p>
+                </div>
+                <div class="about-content">
+                    <h3 class="sixth-font text-align-center">The History</h3>
+                    <p>
+                        The <b>History of Kitchens</b> and Cooks gives further intimation on Mr Boulanger
+                        usual
+                        menu, stating confidently that "Boulanger served salted poultry and fresh eggs, all
+                        presented without a tablecloth on small marble tables". Numerous commentators have
+                        also referred to the supposed restaurant owner's eccentric habit of touting for
+                        custom outside his establishment, dressed in aristocratic fashion and brandishing a
+                        sword
+                    </p> <br>
+                    <p>According to Miss Spang, there is not a shred of evidence for any of it. She said:
+                        These legends just get passed on by hearsay and then spiral out of control. Her
+                        interest in <b>Boulanger</b> dates back to a history of food seminar in Paris in the
+                        mid-1990s
+                    </p>
+                    <div class="about-decor flex justify-content-center align-items-center">
+                        <img src="img/ornament.png" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="first-heading-item flex justify-content-center align-items-center text-align-center">
-                        <p>We love restaurants as much as you do. That’s why we’ve been helping them fill <br>tables
-                            since
-                            1999.
-                            Welcome to elixir restaurant</p>
-                    </div>
+                <div class="about-photo about-photo-right">
+                    <img src="img/about01.jpg" alt="" class="w100">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="about-history">
-                        <!-- about-history-... = abh-... -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="abh-header sixth-font flex justify-content-center">
-                                    <h3>The History</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="abh-text">
-                                <p>
-                                    The <b>History of Kitchens</b> and Cooks gives further intimation on Mr Boulanger
-                                    usual
-                                    menu, stating confidently that "Boulanger served salted poultry and fresh eggs, all
-                                    presented without a tablecloth on small marble tables". Numerous commentators have
-                                    also referred to the supposed restaurant owner's eccentric habit of touting for
-                                    custom outside his establishment, dressed in aristocratic fashion and brandishing a
-                                    sword
-                                </p> <br>
-                                <p>According to Miss Spang, there is not a shred of evidence for any of it. She said:
-                                    These legends just get passed on by hearsay and then spiral out of control. Her
-                                    interest in <b>Boulanger</b> dates back to a history of food seminar in Paris in the
-                                    mid-1990s
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="abh-decoration flex justify-content-center align-items-center">
-                                    <img src="img/ornament.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="about-photo about-photo-left">
+                    <img src="img/about05 (1).jpg" alt="" class="w100">
                 </div>
-                <div class="col-6">
-                    <div class="about-photo flex justify-content-end align-items-center">
-                        <div class="about-photo-right">
-                            <img src="img/about01.jpg" alt="" class="w100">
-                        </div>
-                    </div>
+                <div class="about-content">
+                    <p>
+                        The <b>History of Kitchens</b> and Cooks gives further intimation on Mr Boulanger
+                        usual
+                        menu, stating confidently that "Boulanger served salted poultry and fresh eggs, all
+                        presented without a tablecloth on small marble tables". Numerous commentators have
+                        also referred to the supposed restaurant owner's eccentric habit of touting for
+                        custom outside his establishment, dressed in aristocratic fashion and brandishing a
+                        sword
+                    </p> <br>
+                    <p>According to Miss Spang, there is not a shred of evidence for any of it. She said:
+                        These legends just get passed on by hearsay and then spiral out of control. Her
+                        interest in <b>Boulanger</b> dates back to a history of food seminar in Paris in the
+                        mid-1990s
+                    </p>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-6">
-                    <div class="about-photo-left">
-                        <img src="img/about05 (1).jpg" alt="" class="w100">
-                    </div>
-<!-- 
-                    <div class="testimonials-circles">
-                        <span class="testimonials-circle" onclick="currentSlide(1)"></span>
-                        <span class="testimonials-circle" onclick="currentSlide(2)"></span>
-                        <span class="testimonials-circle" onclick="currentSlide(3)"></span>
-                    </div> -->
-                </div>
-                <div class="col-6">
-                    <div class="about-history">
-                        <!-- about-history-... = abh-... -->
-                        <div class="row">
-                            <div class="abh-text">
-                                <p>
-                                    The <b>History of Kitchens</b> and Cooks gives further intimation on Mr Boulanger
-                                    usual
-                                    menu, stating confidently that "Boulanger served salted poultry and fresh eggs, all
-                                    presented without a tablecloth on small marble tables". Numerous commentators have
-                                    also referred to the supposed restaurant owner's eccentric habit of touting for
-                                    custom outside his establishment, dressed in aristocratic fashion and brandishing a
-                                    sword
-                                </p> <br>
-                                <p>According to Miss Spang, there is not a shred of evidence for any of it. She said:
-                                    These legends just get passed on by hearsay and then spiral out of control. Her
-                                    interest in <b>Boulanger</b> dates back to a history of food seminar in Paris in the
-                                    mid-1990s
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -263,64 +206,29 @@
 
     <!-- Opening Hours section start -->
     <section id="opening-hours">
-        <!-- timetable-... = tt-.. -->
-        <div
-            class="timetable secondary-section-padding background-no-repeat background-size-cover background-position-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-5">
-                        <div class="tt-deceration-left flex justify-content-end align-items-center h100">
-                            <img src="img/timetable-dec.png" alt="">
-                        </div>
+        <div class="container">
+            <img src="img/column-divider.png" alt="" class="timetable-photo">
+            <div class="timetable secondary-section-padding">
+                <div class="timetable-header secondary-font">
+                    <div class="timetable-title flex justify-content-center align-items-center">
+                        <img src="img/timetable-dec.png" alt="">
+                        <h3>OPENING HOURS</h3>
+                        <img src="img/timetable-dec2.png" alt="">
                     </div>
-                    <div class="col-3">
-                        <div class="tt-header secondary-font flex justify-content-center align-items-center h100">
-                            <h3>OPENING HOURS</h3>
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="tt-deceration-right flex justify-content-start align-items-center h100">
-                            <img src="img/timetable-dec2.png" alt="">
-                        </div>
-                    </div>
+                    <p class="third-font text-align-center">Call For Reservations</p>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div
-                            class="tt-item third-font flex justify-content-center align-items-center h100 text-align-center">
-                            <span>Call For Reservations</span>
-                        </div>
-                    </div>
+                <div
+                    class="timetable-content timetable-content-left flex justify-content-center align-items-center flex-direction-column">
+                    <h6 class="third-font text-align-center">Sunday to Tuesday</h6><br>
+                    <span class="secondary-font">09:00<br>24:00</span>
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="flex justify-content-end align-items-center h100">
-                            <div class="tt-time text-align-center">
-                                <h6 class="third-font">Sunday to Tuesday</h6><br>
-                                <span class="secondary-font">09:00<br>24:00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="tt-column flex justify-content-center align-items-center h100">
-                            <img src="img/column-divider.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="flex justify-content-start align-items-center h100">
-                            <div class="tt-time text-align-center">
-                                <h6 class="third-font">Friday and Saturday</h6><br>
-                                <span class="secondary-font">08:00<br>03:00</span>
-                            </div>
-                        </div>
-                    </div>
+                <div
+                    class="timetable-content timetable-content-right flex justify-content-center align-items-center flex-direction-column">
+                    <h6 class="third-font text-align-center">Friday and Saturday</h6><br>
+                    <span class="secondary-font">08:00<br>03:00</span>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="tt-contact secondary-font flex justify-content-center align-items-center h100">
-                            <span>RESERVATION NUMBER: 0842-5484214</span>
-                        </div>
-                    </div>
+                <div class="timetable-reservation secondary-font flex justify-content-center align-items-center">
+                    <span>RESERVATION NUMBER: 0842-5484214</span>
                 </div>
             </div>
         </div>
@@ -330,15 +238,11 @@
     <!-- Menu section start -->
     <section id="menu" class="section-padding background-no-repeat">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="menu-logo flex justify-content-center align-items-center h100">
-                        <img src="img/menu_logo.png" alt="">
-                    </div>
+            <div class="menu">
+                <div class="menu-logo flex justify-content-center align-items-center">
+                    <img src="img/menu_logo.png" alt="">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
+                <div class="menu-item">
                     <div class="menu-header secondary-font text-align-center">
                         <h3>PRIME STEAKS</h3>
                     </div>
@@ -413,7 +317,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="menu-item">
                     <div class="menu-header secondary-font text-align-center">
                         <h3>DRINKS & WINES</h3>
                     </div>
@@ -487,7 +391,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="menu-item">
                     <div class="menu-header secondary-font text-align-center">
                         <h3>DESSERTS</h3>
                     </div>
@@ -561,14 +465,10 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="btn-menu-box flex justify-content-center align-items-center h100">
-                        <a href="menu.html" class="text-decoration-none">
-                            <button class="btn-menu first-font">View Complete Menu</button>
-                        </a>
-                    </div>
+                <div class="menu-btn">
+                    <a href="menu.html" class="text-decoration-none">
+                        <button class="btn-menu first-font">View Complete Menu</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -679,17 +579,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-5">
-                    <form action="#">
-                        <input type="text" placeholder="Name" class="contact-form w100">
-                        <input type="email" placeholder="Email" class="contact-form w100">
-                        <input type="text" placeholder="Subject" class="contact-form w100">
-                    </form>
-                </div>
-                <div class="col-6">
-                    <form action="#" class="contact-form-box flex justify-content-center align-items-center h100">
-                        <input type="text" name="" id="" placeholder=""
-                            class="contact-form contact-form-message h100 w100">
+                <div class="col-12">
+                    <form action="#" class="contact-box">
+                        <input type="text" placeholder="Name" class="contact-form">
+                        <input type="email" placeholder="Email" class="contact-form">
+                        <input type="text" placeholder="Subject" class="contact-form">
+                        <input type="text" name="" id="" placeholder="Message" class="contact-message contact-form">
                     </form>
                 </div>
             </div>
@@ -734,6 +629,7 @@
     <!-- Footer section end -->
 
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 
 

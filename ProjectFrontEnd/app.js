@@ -1,3 +1,7 @@
+
+
+
+
 /* Slider section start */
 let imgSlider = document.querySelector(".slide-background img")
 imagesSlider = [
@@ -99,7 +103,7 @@ let intervalAboutRight = setInterval(function () {
 }, 3000)
 
 
-let imgAboutLeft = document.querySelector(".about-photo-left img")
+let imgAboutLeft = document.querySelector(".about-photo-lr=eft img")
 imagesAboutLeft = [
     'img/about04.jpg',
     'img/about05 (1).jpg',

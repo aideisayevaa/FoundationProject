@@ -24,11 +24,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
@@ -109,11 +112,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div id="myBtnContainer">
-
-                    </div>
-                    <div class="gallery-navbar h100">
-                        <div class=" flex justify-content-center align-items-center h100">
+                        <div class="gallery-navbar-buttons flex justify-content-center align-items-center h100 text-align-center">
                             <button class="btn-gallery" onclick="filterSelection('all')">All Photos</button>
                             <button class="btn-gallery" onclick="filterSelection('food')"> Food</button>
                             <button class="btn-gallery" onclick="filterSelection('restaurant')"> Restaurant</button>
@@ -210,20 +209,44 @@
             <div class="row">
                 <div class="col-12">
                     <div class="testimonials-item">
-                        <p>Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon
-                            cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
+                        <div class="testimonials-text">
+                            <p>Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon
+                                cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
+                        </div>
+                        <div class="testimonials-author">
+                            <span> - Alexander Smith</span>
+                        </div>
                     </div>
-                    <div class="testimonials-author">
-                        <span> - Alexander Smith</span>
+
+                    <div class="testimonials-item">
+                        <div class="testimonials-text">
+                            <p>"Awesome to work with. Incredibly organized, easy to communicate with, responsive with
+                                next iterations, and beautiful work. It’s great to work with someone so open-minded and
+                                responsive. Thank you!"</p>
+                        </div>
+                        <div class="testimonials-author">
+                            <span> - John Berthier</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-item">
+                        <div class="testimonials-text">
+                            <p>“Your designs were exactly what Josef had always imagined — clear, clean, continuous,
+                                with a focus on stylistic elements. It was a major help for us. Thank you so much for
+                                your work on this project."</p>
+                        </div>
+                        <div class="testimonials-author">
+                            <span> - Carolyn Meyer</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="tesimonials-click flex justify-content-center align-items-center h100">
-                        <div class="testimonials-click-circle"></div>
-                        <div class="testimonials-click-circle"></div>
-                        <div class="testimonials-click-circle"></div>
+                    <div class="testimonials-circles">
+                        <span class="testimonials-circle" onclick="currentSlide(1)"></span>
+                        <span class="testimonials-circle" onclick="currentSlide(2)"></span>
+                        <span class="testimonials-circle" onclick="currentSlide(3)"></span>
                     </div>
                 </div>
             </div>
@@ -264,17 +287,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-5">
-                    <form action="#">
-                        <input type="text" placeholder="Name" class="contact-form w100">
-                        <input type="email" placeholder="Email" class="contact-form w100">
-                        <input type="text" placeholder="Subject" class="contact-form w100">
-                    </form>
-                </div>
-                <div class="col-6">
-                    <form action="#" class="contact-form-box flex justify-content-center align-items-center h100">
-                        <input type="text" name="" id="" placeholder=""
-                            class="contact-form contact-form-message h100 w100">
+                <div class="col-12">
+                    <form action="#" class="contact-box">
+                        <input type="text" placeholder="Name" class="contact-form">
+                        <input type="email" placeholder="Email" class="contact-form">
+                        <input type="text" placeholder="Subject" class="contact-form">
+                        <input type="text" name="" id="" placeholder="Message" class="contact-message contact-form">
                     </form>
                 </div>
             </div>
