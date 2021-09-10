@@ -1,5 +1,63 @@
 @media screen and (max-width:576px) {
 
+    /* Slider */
+    .nav-menu {
+        display: none;
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 86px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #2b2b24be;
+        overflow: hidden;
+        transition: .5s ease;
+    }
+
+    .nav-menu li {
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid var(--gray);
+        cursor: pointer;
+    }
+
+    .nav-menu li a {
+        font-size: 18px;
+        color: var(--white);
+    }
+
+    .nav-menu li:hover a {
+        color: var(--dark-gold)
+    }
+
+    input[type="checkbox"]:checked+.nav-menu {
+        display: block;
+    }
+
+    .icon-burger {
+        display: block;
+    }
+
+    .slc-welcomeText {
+        font-size: 25px;
+    }
+
+    .slide-background img {
+        background-position-x: 50%;
+    }
+
+    #slider {
+        overflow: hidden;
+    }
+
+    .slide-background img {
+        position: absolute;
+        width: 288%;
+    }
 
     /* About */
     .about {
@@ -138,6 +196,65 @@
 
 @media (min-width:576px) and (max-width:768px) {
 
+    /* Slider */
+    .nav-menu {
+        display: none;
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 86px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #2b2b24be;
+        overflow: hidden;
+        transition: .5s ease;
+    }
+
+    .nav-menu li {
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid var(--gray);
+        cursor: pointer;
+    }
+
+    .nav-menu li a {
+        font-size: 18px;
+        color: var(--white);
+    }
+
+    .nav-menu li:hover a {
+        color: var(--dark-gold)
+    }
+
+    input[type="checkbox"]:checked+.nav-menu {
+        display: block;
+    }
+
+    .icon-burger {
+        display: block;
+    }
+
+    .slc-welcomeText {
+        font-size: 25px;
+    }
+
+    .slide-background img {
+        background-position-x: 50%;
+    }
+
+    #slider {
+        overflow: hidden;
+    }
+
+    .slide-background img {
+        position: absolute;
+        width: 179%;
+    }
+
     /* About */
     .about {
         grid-template-columns: 1fr;
@@ -267,38 +384,6 @@
 
     .menu-list {
         grid-column: 1 / 2;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #home-header {
-        display: none;
-    }
-
-    #slider {
-        display: none;
     }
 
 
