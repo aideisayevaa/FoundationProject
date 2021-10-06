@@ -1,6 +1,6 @@
 /* Home Page Start */
-/* header section start */
 
+/* header section start */
 
 #home-header {
     position: absolute;
@@ -45,7 +45,6 @@
     padding: 0px 20px;
     text-decoration: none;
     transition: all .3s ease;
-    
 }
 
 .nav-menu li :hover {
@@ -72,22 +71,15 @@
     color: var(--gold);
 }
 
-.home-nav-menu li a{
-    color: white;
-}
+
 /* header section end */
 
 
 /* Slider section start */
 
-#slider {
-    position: relative;
+.slide-background{
+    transition: all .3s ease;
 }
-
-/* .slide {
-    background-image: url(../img/silder1.jpg);
-} */
-
 .slide-background img {
     width: 100%;
     position: absolute;
@@ -99,15 +91,42 @@
 
 .slc-logoIntro {
     margin-top: 30px;
-    cursor: pointer;
 }
 
-.slc-welcomeText {
+.slc-welcomeText h2{
     font-size: 37px;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 4px;
+    display: none;
 }
+
+.slc-welcomeText h2.text-in{
+	display: block;
+	animation: textIn .5s ease;
+}
+.slc-welcomeText h2.text-out{
+	animation: textOut .5s ease;
+}
+
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+/* @keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+} */
+
 
 .slc-decoration {
     margin: 30px 0;
@@ -158,28 +177,7 @@
 }
 
 .about-photo-left{
-    width: 87%;
-}
-
-.about-photo-left img{
-    position: absolute;
-    left: 5%;
-    z-index: 1;
-}
-.about-photo{
-    position: relative;
-}
-
-.about-choose-left{
-    width: 10%;
-    left: 11%;
-    top: 31%;
-}
-
-.about-choose-right{
-    width: 10%;
-    left: 90%;
-    top: 32%;
+    width: 95%;
 }
 
 /* About section end */
@@ -539,23 +537,19 @@
     list-style: none;
 }
 
-/* .gallery-navbar-buttons{
+.gallery-navbar-buttons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 20%;
-} */
-
-.gallery-navbar-buttons li{
-    list-style: none;
 }
 
-.gallery-navbar-buttons li a {
+/* .gallery-navbar .btn-gallery a {
     text-decoration: none;
     color: var(--white);
     margin: 0 25px;
     padding: 5px 0;
     transition: all .3s step-end;
-}
+} */
 
 .gallery-photos {
     display: grid;
@@ -571,7 +565,7 @@
     height: 100%;
 }
 
-.gallery-navbar-buttons li:hover a {
+.gallery-navbar .btn-gallery:hover a {
     border-bottom: 2px solid var(--gold);
 }
 
