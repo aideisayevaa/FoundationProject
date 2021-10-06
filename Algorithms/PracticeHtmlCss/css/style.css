@@ -1,0 +1,640 @@
+/* Header section start */
+.header-top {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 1.2em 0;
+    font-size: 0.9em;
+}
+
+.header-top-info span {
+    margin: 0.3em;
+}
+
+.header-top-info span i {
+    margin: 0 0.5em;
+    color: var(--yellow);
+}
+
+.header-top-account p {
+    margin: 0 1.5em;
+}
+
+.top-account-btn {
+    padding: 0.5em 2em;
+}
+
+.header-navbar {
+    position: absolute;
+    background-color: none;
+    padding: 1.2em 0;
+    z-index: 2;
+    width: 100%;
+    border-bottom: 1px solid #5C6574;
+}
+
+.navbar-logo {
+    margin-left: 3.2em;
+}
+
+.navbar-menu ul {
+    list-style: none;
+}
+
+.navbar-menu ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    margin: 0 1.3em;
+}
+
+.navbar-search span {
+    color: var(--white);
+    font-size: 1.2em;
+    margin: 0 0.6em;
+}
+
+/* Header section end */
+
+/* Slider section start */
+
+.slide {
+    background-image: url(../img/slider-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s linear;
+}
+
+
+.slide-choose {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    background: none;
+    text-align: center;
+    padding: 5px 12px;
+    width: 0.8em;
+    font-size: 1.5em;
+    color: var(--white);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.slide-choose:hover {
+    background-color: var(--white);
+    color: var(--yellow);
+}
+
+
+.slide:hover .slide-choose {
+    display: block;
+}
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #253756ba;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-content {
+    color: var(--white);
+    font-size: 1.9em;
+    font-weight: 500;
+    flex-direction: column;
+}
+
+.slc-header-text {
+    font-size: 1.6em;
+    letter-spacing: 2px;
+}
+
+.slc-header-text span {
+    color: var(--yellow);
+}
+
+.slc-item {
+    font-size: 0.6em;
+    margin: 1.5em;
+}
+
+.slc-btn {
+    padding: 1em 3em;
+    font-size: 0.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Slider section end */
+
+/* Features section start */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    position: relative;
+    z-index: 5;
+    margin-top: -6.5em;
+}
+
+.feature {
+    text-align: center;
+    color: var(--white);
+}
+
+.feature h4 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin: 1em 0 0.7em;
+}
+
+.feature-1 {
+    background-color: #DE322E;
+    padding: 2em;
+}
+
+.feature-2 {
+    background-color: #FCC741;
+    padding: 2em;
+}
+
+.feature-3 {
+    background-color: #48CFAF;
+    padding: 2em;
+}
+
+
+/* Features section end */
+
+/* About section start */
+
+#about {
+    position: relative;
+    z-index: 1;
+}
+
+.shape-1 {
+    position: absolute;
+    top: 60px;
+    left: 10%;
+}
+
+.shape-2 {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.shape-3 {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+
+.shape-4 {
+    position: absolute;
+    top: 120px;
+    right: 5%;
+}
+
+.shape-5 {
+    position: absolute;
+    top: 30px;
+    right: 30%;
+}
+
+.about-item {
+    width: 80%;
+}
+
+.about-item h2 {
+    font-size: 2.8em;
+    color: var(--dark-blue);
+}
+
+.about-item p {
+    color: var(--dark-gray);
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-top: 1.2em;
+}
+
+.about-btn {
+    padding: 0.8em 2.7em;
+    margin-top: 35px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid var(--yellow);
+    border-radius: 3em;
+    color: var(--light-black);
+    background-color: transparent;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.about-btn:hover {
+    background-color: var(--yellow);
+}
+
+.about-photo {
+    position: relative;
+}
+
+.about-photo img {
+    border-radius: 5px;
+}
+
+.about-1 {
+    position: absolute;
+}
+
+.about-2 {
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.about-3 {
+    position: absolute;
+    top: 15em;
+    right: 1em;
+}
+
+/* About section end */
+
+/* Counter section start */
+
+.counter-photo1 {
+    border: 1px dashed #40D0AF;
+}
+
+.counter-photo2 {
+    border: 1px dashed #FCC741;
+}
+
+.counter-photo3 {
+    border: 1px dashed #DE322E;
+}
+
+.counter-photo4 {
+    border: 1px dashed #3D84C8;
+}
+
+.counter-item {
+    z-index: 3;
+    height: 4em;
+    background-color: var(--white);
+    margin: 0.7em 0 0 -1em;
+}
+
+.counter-item span {
+    color: var(--dark-blue);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.counter-item p {
+    color: var(--dark-gray);
+}
+
+/* Counter section end */
+
+/* Secondary about section start */
+
+.about-video {
+    width: 100%;
+}
+
+.about-video img {
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.about-content {
+    flex-direction: column;
+    color: var(--white);
+    background-color: var(--yellow);
+    padding: 0 2em;
+}
+
+.about-picture {
+    width: 100%;
+}
+
+.about-picture img {
+    width: 100%;
+}
+
+.secondary-about-btn {
+    background: none;
+    border: 2px solid var(--white);
+    color: white;
+    padding: 0.6em 1em;
+    border-radius: 2em;
+    width: 60%;
+    font-size: 0.8em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.secondary-about-btn:hover {
+    background-color: var(--white);
+    color: black;
+}
+
+/* Secondary about section end */
+
+/* Programes section start */
+#programes {
+    background-image: url(../img/bg_shape.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+}
+
+
+#programes-container {
+    position: absolute;
+    left: 6em;
+    top: 6em;
+}
+
+.programes-title {
+    flex-direction: column;
+    text-align: center;
+    font-size: 2em;
+    color: var(--white);
+}
+
+.programes-title h2 {
+    font-size: 1.5em;
+}
+
+.programes-title p {
+    font-size: 0.6em;
+    margin: 0.4em 0 1.8em 0;
+}
+
+.programe-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.programe-icon {
+    padding: 2em 0;
+}
+
+.programe-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--dark-blue);
+    font-size: 1.5em;
+    background-color: white;
+}
+
+/* Programes section end */
+
+/* Why choose us section start */
+#why-choose {
+    background: url(../img/choose_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.why-choose-content {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.why-choose-item:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.why-choose-title h2 {
+    font-size: 3em;
+}
+
+/* Why choose us section end */
+
+/* Courses section start */
+
+#courses {
+    background-color: #F3F8FC;
+    position: relative;
+    padding: 4em 0 10em 0;
+}
+
+.courses-title h2 {
+    font-size: 3em;
+    color: var(--dark-blue);
+}
+
+.courses-title p {
+    font-size: 1em;
+    color: var(--dark-gray);
+    margin: 1em 0 3em 0;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    height: 300px;
+}
+
+.course {
+    border-radius: 5px;
+}
+
+
+.course-item {
+    background: white;
+    padding: 1em;
+}
+
+.course-item p {
+    margin: 1em 0;
+}
+
+.course img {
+    border-radius: 5px;
+}
+
+.course-author img {
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+
+.course p {
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+.course-icon .far {
+    color: var(--yellow);
+}
+
+.course-icon span {
+    color: var(--dark-gray);
+    margin-right: 1em;
+}
+
+.course-price span {
+    padding: 0.2em 1em;
+    background-color: var(--yellow);
+    border-radius: 7px;
+    color: white;
+}
+
+/* Courses section end */
+
+/* Testimonials section start */
+
+#testimonials {
+    background-image: url(../img/testimonial_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonials-overlay {
+    background-color: rgba(27, 41, 69, 0.9);
+    padding: 9em 6em;
+}
+
+.testimonailas-content h3 {
+    color: var(--white);
+    font-size: 2.6em;
+    letter-spacing: 2px;
+}
+
+.author-profile img {
+    border-radius: 50%;
+    margin: 0.3em;
+}
+
+.author-feedback {
+    color: var(--white);
+    font-size: 1.2em;
+    background-color: rgb(255 255 255 / 20%);
+    padding: 1em 2em;
+    border-radius: 0 34px;
+}
+
+.author-feedback p {
+    font-style: italic;
+}
+
+.author-feedback h6 {
+    letter-spacing: 1px;
+}
+
+/* Testimonials section end */
+
+/* Teachers section start */
+
+.teachers-title h2 {
+    font-size: 3em;
+    color: var(--dark-blue);
+}
+
+.teachers-title p {
+    font-size: 1em;
+    color: var(--dark-gray);
+    margin: 1em 0 3em 0;
+}
+
+.teachers-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+}
+
+.teachers-item {
+    flex-direction: column;
+    color: white;
+}
+
+.teachers-item img {
+    height: 100%;
+}
+
+.teachers-item h6{
+    font-size: 1.2em;
+}
+
+.teachers-item span{
+    font-size: 0.9em;
+}
+
+.left-1 {
+    position: absolute;
+    top: 22%;
+    left: 21%;
+}
+
+.left-2 {
+    position: absolute;
+    top: 22%;
+    right: 20%;
+}
+
+.right-1 {
+    position: absolute;
+    bottom: 22%;
+    left: 21%;
+}
+
+.right-2 {
+    position: absolute;
+    bottom: 22%;
+    right: 21%;
+}
+
+.teachers-socical-links .fab{
+    margin: 10px 4px;
+}
+
+
+/* Teachers section end */
+
+
+.events{
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 3fr;
+    grid-template-rows: 1fr, 1fr;
+}
+
+.events-item{
+    border: 1px solid gray;
+    height: 300px;
+}
+
+.events-item:nth-child(4){
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.events-item:nth-child(4){
+
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+    <title>Create Book</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/create_book" class="choose-btn nav-link">Create Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/show" class="choose-btn nav-link">Show Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin" class="choose-btn nav-link">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form action="/create_book", method="POST">
+                    <label for="name" class="form-label">Name of book</label>
+                    <input type="text" class="form-control" id="name" name='Name'>
+                    <label for="name" class="form-label">Author of book</label>
+                    <input type="text" class="form-control" id="name" name='Author'>
+                    <label for="name" class="form-label">Year of book</label>
+                    <input type="text" class="form-control" id="name" name='Year'>
+                    <label for="name" class="form-label">Number of page in book</label>
+                    <input type="text" class="form-control" id="name" name='Number'>
+                    <label for="name" class="form-label">Summary of book</label>
+                    <input type="text" class="form-control" id="name" name='Summary'> <br>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

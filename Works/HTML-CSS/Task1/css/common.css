@@ -1,0 +1,18 @@
+.w100 {
+    width: 100%;
+}
+
+.h100 {
+    height: 100%;
+}
+
+:root {
+    --white: #ffffff;
+    --blue: #0477FF;
+    --orange: #F54A04;
+    --gray: #99A0A6;
+}
+
+.b-radius-08em {
+    border-radius: 0.8em
+}

@@ -1,0 +1,158 @@
+.flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+/* Background */
+
+.background-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.background-size-cover {
+    background-size: cover;
+}
+
+.background-position-center {
+    background-position: center center;
+}
+
+/* Colors */
+:root {
+    --gold: #c0a756;
+    --dark-gold: #ad9037;
+    --gray: #777777;
+    --white: #ffffff;
+    --light-black: #141313;
+    --black: #000000;
+}
+
+/* Fonts */
+
+.first-font {
+    font-family: "Cabin", sans-serif;
+}
+
+.secondary-font {
+    font-family: 'Oswald', sans-serif;
+}
+
+.third-font {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.fourth-font {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fifth-font {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.sixth-font {
+    font-family: 'Great Vibes', cursive;
+}
+
+.seventh-font {
+    font-family: 'Bitter', serif;
+}
+
+/* Section */
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.secondary-section-padding {
+    padding: 50px 0;
+}
+
+.third-section-padding-top {
+    padding-top: 120px;
+}
+
+
+/* Header-section */
+
+.navbar {
+    padding: 17px 0px;
+}
+
+.nav-menu {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.nav-menu li a {
+    padding: 0px 20px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.nav-menu li :hover {
+    color: var(--gold)
+}
+
+/* Header */
+
+.first-heading {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.first-heading-item {
+    font-style: italic;
+    font-size: 17px;
+    color: var(--gray);
+    margin: 49px 0 79px 0;
+    line-height: 26px;
+}
+
+.header-dec-left {
+    margin-left: 74px;
+}
+
+.header-dec-right {
+    margin-right: 74px;
+}

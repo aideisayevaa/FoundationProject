@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>esas</title>
+
+</head>
+
+<body>
+
+    <!-- header section start-->
+    <section id="home-header" class=" w100">
+        <div class="navbar home-navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="navbar-logo flex justify-content-center align-items-center h100">
+                           <a href="index.html">
+                            <img src="img/logo-restaurant.png" alt="Logo">
+                           </a>
+                        </div>
+
+                    </div>
+                    <div class="col-7">
+                        <div class="nav h100">
+                            <input id="nav-toggle" type="checkbox">
+                            <ul class="nav-menu flex home-nav-menu justify-content-end align-items-center h100 fourth-font">
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="menu.html">MENU</a>
+                                </li>
+                                <li>
+                                    <a href="gallery.html">GALLERY</a>
+                                </li>
+                                <li>
+                                    <a href="location.html">LOCATION</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <label for="nav-toggle" class="icon-burger">
+                            <i class="fas fa-bars"></i>
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- header section end -->
+
+    <!-- Slider section start -->
+    <div id="slider" class="w100">
+
+        <div class="slide section-padding background-no-repeat background-size-cover background-position-center">
+            <div class="slide-background">
+                <img src="img/silder1.jpg" alt="">
+            </div>
+            <div class="container-full">
+                <div class="row">
+                    <div class="col-1">
+                        <div class="slide-choose-left flex align-items-center h100 cursor-pointer" onclick="goPrev()">
+                            <img style="z-index: 2;" src="img/btn-choose-left.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="slide-content flex justify-content-center align-items-center">
+                            <!-- slide-content-... = slc-... -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="slc-logoIntro flex justify-content-center align-items-center">
+                                            <img style="z-index: 2;" src="img/logo-intro.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div
+                                            class="slc-welcomeText secondary-font flex justify-content-center align-items-center text-align-center">
+                                            <h2 style="z-index: 2;">Welcome to restaurant</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="slc-decoration flex justify-content-center align-items-center">
+                                            <img style="z-index: 2;" src="img/decoration-line.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div
+                                            class="slc-mini-text fifth-font flex justify-content-center align-items-center w100">
+                                            <p style="z-index: 2;">The Chef creates divine combinations</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="slide-choose-right flex justify-content-end align-items-center h100 cursor-pointer" onclick="goNext()">
+                            <img style="z-index: 2;" src="img/btn-choose-right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider section end -->
+
+    <!-- About section start -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about">
+                <div class="about-header">
+                    <div class="about-title flex justify-content-center align-items-center">
+                        <img src="img/about-decoration-line.png" alt="">
+                        <h3 class="first-heading">ABOUT US</h3>
+                        <img src="img/about-decoration-line.png" alt="">
+                    </div>
+                    <p class="first-heading-item flex justify-content-center align-items-center text-align-center">We
+                        love restaurants as much as you do. That’s why we’ve been helping them fill <br>tables
+                        since
+                        1999.
+                        Welcome to elixir restaurant</p>
+                </div>
+                <div class="about-content">
+                    <h3 class="sixth-font text-align-center">The History</h3>
+                    <p>
+                        The <b>History of Kitchens</b> and Cooks gives further intimation on Mr Boulanger
+                        usual
+                        menu, stating confidently that "Boulanger served salted poultry and fresh eggs, all
+                        presented without a tablecloth on small marble tables". Numerous commentators have
+                        also referred to the supposed restaurant owner's eccentric habit of touting for
+                        custom outside his establishment, dressed in aristocratic fashion and brandishing a
+                        sword
+                    </p> <br>
+                    <p>According to Miss Spang, there is not a shred of evidence for any of it. She said:
+                        These legends just get passed on by hearsay and then spiral out of control. Her
+                        interest in <b>Boulanger</b> dates back to a history of food seminar in Paris in the
+                        mid-1990s
+                    </p>
+                    <div class="about-decor flex justify-content-center align-items-center">
+                        <img src="img/ornament.png" alt="">
+                    </div>
+                </div>
+                <div class="about-photo about-photo-right">
+                    <img src="img/about01.jpg" alt="" class="w100">
+                </div>
+                <div class="about-photo about-photo-left">
+                    <img src="img/about05 (1).jpg" alt="" class="w100">
+                    <!-- <img src="img/btn-choose-left.png" alt="" class="about-choose-left">
+                    <img src="img/btn-choose-right.png" alt="" class="about-choose-right"> -->
+                </div>
+                <div class="about-content">
+                    <p>
+                        The <b>History of Kitchens</b> and Cooks gives further intimation on Mr Boulanger
+                        usual
+                        menu, stating confidently that "Boulanger served salted poultry and fresh eggs, all
+                        presented without a tablecloth on small marble tables". Numerous commentators have
+                        also referred to the supposed restaurant owner's eccentric habit of touting for
+                        custom outside his establishment, dressed in aristocratic fashion and brandishing a
+                        sword
+                    </p> <br>
+                    <p>According to Miss Spang, there is not a shred of evidence for any of it. She said:
+                        These legends just get passed on by hearsay and then spiral out of control. Her
+                        interest in <b>Boulanger</b> dates back to a history of food seminar in Paris in the
+                        mid-1990s
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Opening Hours section start -->
+    <section id="opening-hours">
+        <div class="container">
+            <img src="img/column-divider.png" alt="" class="timetable-photo">
+            <div class="timetable secondary-section-padding">
+                <div class="timetable-header secondary-font">
+                    <div class="timetable-title flex justify-content-center align-items-center">
+                        <img src="img/timetable-dec.png" alt="">
+                        <h3>OPENING HOURS</h3>
+                        <img src="img/timetable-dec2.png" alt="">
+                    </div>
+                    <p class="third-font text-align-center">Call For Reservations</p>
+                </div>
+                <div
+                    class="timetable-content timetable-content-left flex justify-content-center align-items-center flex-direction-column">
+                    <h6 class="third-font text-align-center">Sunday to Tuesday</h6><br>
+                    <span class="secondary-font">09:00<br>24:00</span>
+                </div>
+                <div
+                    class="timetable-content timetable-content-right flex justify-content-center align-items-center flex-direction-column">
+                    <h6 class="third-font text-align-center">Friday and Saturday</h6><br>
+                    <span class="secondary-font">08:00<br>03:00</span>
+                </div>
+                <div class="timetable-reservation secondary-font flex justify-content-center align-items-center">
+                    <span>RESERVATION NUMBER: 0842-5484214</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Opening Hours section end -->
+
+    <!-- Menu section start -->
+    <section id="menu" class="section-padding background-no-repeat">
+        <div class="container">
+            <div class="menu">
+                <div class="menu-logo flex justify-content-center align-items-center">
+                    <img src="img/menu_logo.png" alt="">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-header secondary-font text-align-center">
+                        <h3>PRIME STEAKS</h3>
+                    </div>
+                    <div class="menu-list">
+                        <ul>
+                            <li>
+                                <div class="meal">
+                                    <span>FILET</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>7 oz. Center Cut10 oz. Double cut</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$14.49</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>BOINE IN FILET</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>10 oz Greg Norman Ranch, Australia</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$20.50</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>NEW YORK STRIP</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>9 oz. Center Cut12 oz. Double cut oz</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$9.99</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>PORTERHOUSE</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>7 oz. Center Cut10 oz. Double cut</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$7.99
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>DELMONICO</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>10 oz Greg Norman Ranch, Australia</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$17.99</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-header secondary-font text-align-center">
+                        <h3>DRINKS & WINES</h3>
+                    </div>
+                    <div class="menu-list">
+                        <ul>
+                            <li>
+                                <div class="meal">
+                                    <span>RAIMAT ABADIA</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>Complex, Dark Cherry, Spice, bodied</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$8.50</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>EDEN CHARDONNAY</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>Elegant, Lemon, Vanilla, bodied</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$15.50</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>MAILLY BRUT RESERVA</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>Dry, Toast, Citrus, Medium-bodied</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$17.50</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>LEON V DE</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>Crisp, Citrus, Full-bodied</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$12.50</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>CABERENET SAUVIGNON</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>Intense, Cherry, Chocolate, Full-bodied</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$30.50</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-header secondary-font text-align-center">
+                        <h3>DESSERTS</h3>
+                    </div>
+                    <div class="menu-list">
+                        <ul>
+                            <li>
+                                <div class="meal">
+                                    <span>CREME BRULEE</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>Creme Anglaise, Vanilla Bean Ice Cream</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$7.49</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>WARM CHOCOLATE</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>Amarena Cherries, Kirsch Cream</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$6.50</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>CHEESE CAKE</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>Cheese creme, ice cream, strawberry</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$4.50</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>APPLE TURNOVER</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>Creme Anglaise, Vanilla Bean Ice Cream</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$7.99</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="meal">
+                                    <span>SORBET WITH FRUIT</span>
+                                </div>
+                                <div class="details flex justify-content-between">
+                                    <div class="ingredient">
+                                        <p>Lemon, organge, strawberry or mango</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$8.50</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-btn">
+                    <a href="menu.html" class="text-decoration-none">
+                        <button class="btn-menu first-font">View Complete Menu</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu section end  -->
+
+    <!-- Testimonials section start -->
+    <section id="testimonials"
+        class="secondary-section-padding background-no-repeat background-size-cover background-position-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonials-logo flex justify-content-center align-items-center h100">
+                        <img src="img/testimonials_logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="testimonials-header secondary-font text-align-center">
+                        <h3>TESTIMONIALS</h3>
+                    </div>
+                </div>
+                <div class="col1">
+                    <div class="testimonials-decoration seventh-font">
+                        <span>"</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonials-item">
+                        <div class="testimonials-text">
+                            <p>Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon
+                                cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
+                        </div>
+                        <div class="testimonials-author">
+                            <span> - Alexander Smith</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-item">
+                        <div class="testimonials-text">
+                            <p>"Awesome to work with. Incredibly organized, easy to communicate with, responsive with
+                                next iterations, and beautiful work. It’s great to work with someone so open-minded and
+                                responsive. Thank you!"</p>
+                        </div>
+                        <div class="testimonials-author">
+                            <span> - John Berthier</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-item">
+                        <div class="testimonials-text">
+                            <p>“Your designs were exactly what Josef had always imagined — clear, clean, continuous,
+                                with a focus on stylistic elements. It was a major help for us. Thank you so much for
+                                your work on this project."</p>
+                        </div>
+                        <div class="testimonials-author">
+                            <span> - Carolyn Meyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonials-circles">
+                        <span class="testimonials-circle" onclick="currentSlide(1)"></span>
+                        <span class="testimonials-circle" onclick="currentSlide(2)"></span>
+                        <span class="testimonials-circle" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials section end -->
+
+    <!-- Contact section start -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-header flex justify-content-center align-items-center">
+                        <div class="col-1">
+                            <div class="header-dec-left flex justify-content-center align-items-center">
+                                <img src="img/about-decoration-line.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div
+                                class="contact-header-text first-heading flex justify-content-center align-items-center">
+                                <h3>CONTACT</h3>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="header-dec-right flex justify-content-center align-items-center">
+                                <img src="img/about-decoration-line.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="first-heading-item flex justify-content-center align-items-center text-align-center">
+                        <p>W325 State Road 123 Mondovi, WI (Wisconsin) 98746-54321</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" class="contact-box">
+                        <input type="text" placeholder="Name" class="contact-form">
+                        <input type="email" placeholder="Email" class="contact-form">
+                        <input type="text" placeholder="Subject" class="contact-form">
+                        <input type="text" name="" id="" placeholder="Message" class="contact-message contact-form">
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-btn flex justify-content-center align-items-center h100">
+                        <a href="#" class="text-decoration-none">
+                            <div class="flex justify-content-center align-items-center h100">
+                                <button class="btn-contact first-font">Submit</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Map section start -->
+    <section id="map" style="overflow: hidden;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.4701955087817!2d49.94633941493267!3d40.39843336467674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403063101f8d558d%3A0x7c182de7250a09a2!2sPark%20Firin!5e0!3m2!1saz!2s!4v1619630430820!5m2!1saz!2s"
+            width="1350" height="480" style="border: 1px;;" allowfullscreen="" loading="lazy"></iframe>
+    </section>0
+    <!-- Map section end -->
+
+    <!-- Footer section start -->
+    <section id="footer" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="socical-icons flex justify-content-center align-items-center h100">
+                        <a href="#"><span><i class="fab fa-twitter"></i></span></a>
+                        <a href="#"><span><i class="fab fa-facebook"></i></span></a>
+                        <a href="#"><span><i class="fab fa-pinterest"></i></span></a>
+                        <a href="#"><span><i class="fab fa-google"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section end -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>
