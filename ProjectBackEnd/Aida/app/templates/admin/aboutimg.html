@@ -1,0 +1,52 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container bg-dark bg-gradient">
+<hr>
+<div class="row">
+<h3 class="text-primary" >  Add About Img</h3>
+<div class="col-12  ">
+<form action="/admin/aboutimg" method='POST'enctype="multipart/form-data">
+    <input type="file" class="form-control my-2" name="about_img">
+    <input type="submit" class="btn btn-primary btn-lg" value="Add  Img">
+    <hr>
+</form>
+</div>
+<hr>
+<div class="col-12">
+<h3 class="text-warning"> About Img</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>img</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <hr>
+</div>
+<div class="col align-self-end">
+    </table>
+    <tbody>
+        {% for post in posts %}
+
+        <tr>
+            <td>
+            <td class="text-primary" scope="row">{{post.id}}</td>
+            <td class="text-primary">{{post.about_img}}</td>
+ 
+            <td>
+                <a href="/admin/aboutimgdelete/{{post.id}}"> <i class="fas fa-trash-alt"></i></a>
+                <a href="/admin/aboutimgupdate/{{post.id}}"> <i class="fas fa-edit"></i></a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+     </div>
+   </div>
+</div>
+
+
+{% endblock %}

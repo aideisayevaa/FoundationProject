@@ -1,0 +1,54 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container bg-dark bg-gradient">
+<hr>
+<div class="row">
+<h3 class="text-primary" >  Add End logo</h3>
+<div class="col-12  ">
+<form action="/admin/end" method='POST'enctype="multipart/form-data">
+    <input type="file" class="form-control my-2" name="end_logo_img">
+    <input type="text" class="form-control my-2" name="end_logo_desc">
+    <input type="submit" class="btn btn-primary btn-lg" value="Add  Logo">
+    <hr>
+</form>
+<hr>
+
+<div class="col-12">
+<h3 class="text-warning"> Logo</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th  class="text-warning" >id</th>
+            <th  class="text-warning">logo_img</th>
+            <th class="text-warning" >Actions</th>
+        </tr>
+    </thead>
+    <hr>
+</div>
+<div class="col align-self-end">
+    </table>
+    <tbody>
+        {% for end in ends %}
+
+        <tr>
+            <td>
+            <td class="text-primary" scope="row">{{end.id}}</td>
+            <td class="text-primary">{{end.end_logo_img}}</td>
+            <td class="text-primary">{{end.end_logo_desc}}</td>
+
+            <td>
+                <a href="/admin/enddelete/{{end.id}}"> <i class="fas fa-trash-alt"></i></a>
+                <a href="/admin/endupdate/{{end.id}}"> <i class="fas fa-edit"></i></a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+     </div>
+   </div>
+</div>
+
+
+{% endblock %}

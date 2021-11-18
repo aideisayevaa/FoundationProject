@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container-sm">
+<hr>
+<h3 class="text-primary">Counter Update</h3>
+<form action="/admin/countupdate/{{info.id}}" method='POST'>
+<input type="text" class="form-control my-2" name="counter_icon_name" placeholder="icon name " value="{{info.counter_icon_name}}">
+<input type="text" class="form-control my-2" name="counter_icon" placeholder="icon " value="{{info.counter_icon}}">
+<input type="text" class="form-control my-2" name="counter_count" placeholder="count" value="{{info.counter_count}}">
+<input type="text" class="form-control my-2" name="counter_txt" placeholder="txt" value="{{info.counter_txt}}">
+<input type="submit" class="btn btn-primary btn-lg" value=" Count Update">
+<hr>
+</form>
+</div>
+
+{% endblock %}

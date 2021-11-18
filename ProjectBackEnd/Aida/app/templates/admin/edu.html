@@ -1,0 +1,65 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container bg-dark bg-gradient">
+<hr>
+<div class="row">
+<h3 class="text-primary" >Education </h3>
+<div class="col-12  ">
+<form action="/admin/edu" method='POST'>
+    <input type="text" class="form-control my-2" name="start_date" placeholder="start date">
+    <input type="text" class="form-control my-2" name="end_date" placeholder="end date">
+    <input type="text" class="form-control my-2" name="edu_heading" placeholder="heading">
+    <input type="text" class="form-control my-2" name="edu_desc" placeholder="desc"   >  
+    <input type="submit" class="btn btn-primary btn-lg" value="Add  edu ">
+    <hr>
+</form>
+</div>
+<hr>
+<div class="col-12">
+<h3 class="text-warning"> Education</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>start date</th>
+            <th> end date </th>
+            <th>heading</th>
+            <th>desc</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <hr>
+</div>
+<div class="col align-self-end">
+    </table>
+    <tbody>
+        {% for edu in edus %}
+
+        <tr>
+            <td>
+            <td class="text-primary" scope="row">{{edu.id}}</td>
+            <td class="text-primary">{{edu.start_date}}</td>
+            <td class="text-primary">{{edu.end_date}}</td>
+            <td class="text-primary">{{edu.edu_heading}}</td>
+            <td class="text-primary">{{edu.edu_desc}}</td>
+
+ 
+            <td>
+                <a href="/admin/edudelete/{{edu.id}}"> <i class="fas fa-trash-alt"></i></a>
+                <a href="/admin/eduupdate/{{edu.id}}"> <i class="fas fa-edit"></i></a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+     </div>
+   </div>
+</div>
+
+
+{% endblock %}
+
+
+

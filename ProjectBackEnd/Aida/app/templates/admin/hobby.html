@@ -1,0 +1,54 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container bg-dark bg-gradient">
+    <hr>
+    <div class="row">
+    <h3 class="text-primary">Add Hobby  </h3>
+    <div class="col-12">
+<form action="/admin/hobby" method='POST'>
+    <input type="text" class="form-control my-2"name="hobby_icon_name"placeholder=" icon name">
+    <input type="text" class="form-control my-2"name="hobby_icon"placeholder="icon">    
+    <input type="text" class="form-control my-2"name="hobby_desc"placeholder=" desc">        
+    <input type="submit" class="btn btn-primary btn-lg" value="Add Hobby">
+<hr>
+</form>
+<hr>
+<div class="col-12">
+<h3 class="text-warning">  Hobby</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-warning" >id</th>
+            <th class="text-warning" > icon name </th>
+            <th class="text-warning" > icon </th>
+            <th class="text-warning" > desc</th>
+            <th class="text-warning" >Actions</th>
+        </tr>
+    </thead>
+    <hr>
+</div>
+<div class="col align-self-end">
+    <tbody>
+        {% for hobby in hobbys %}
+
+        <tr>
+            <td  class="text-primary"  scope="row">{{hobby.id}}</td>
+            <td class="text-primary" >{{hobby.hobby_icon_name}}</td>
+            <td class="text-primary" >{{hobby.hobby_icon}}</td>
+            <td class="text-primary" >{{hobby.hobby_desc}}</td>
+            <td>
+                <a href="/admin/hobbydelete/{{hobby.id}}"> <i class="fas fa-trash-alt"></i></a>
+                <a href="/admin/hobbyupdate/{{hobby.id}}"> <i class="fas fa-edit"></i></a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}

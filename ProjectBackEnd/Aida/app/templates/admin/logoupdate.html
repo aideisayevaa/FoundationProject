@@ -1,0 +1,13 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container-sm">
+<hr>
+<h3 class="text-primary"> Update Logo Img</h3>
+<form action="/admin/logoupdate/{{logo.id}}" method='POST' enctype="multipart/form-data">
+<input type="file"  class="form-control my-2" name="logo_img" value="{{logo.logo_img}}"  placeholder=" logo img" >
+<input type="submit" class="btn btn-primary btn-lg" value="Update logo img">
+<hr>
+</form>
+</div>
+{% endblock %}

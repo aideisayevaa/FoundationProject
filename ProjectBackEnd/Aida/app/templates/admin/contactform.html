@@ -1,0 +1,38 @@
+
+{% extends "admin/base.html" %}
+
+{% block content %}
+<hr>
+<div class="col-12">
+<hr>
+<h3 class="text-warning"> Navbar</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-warning" >id</th>
+            <th class="text-warning" >user_name</th>
+            <th class="text-warning" >user_email</th>
+            <th class="text-warning" >user_message</th>
+            <th class="text-warning"> Actions</th>
+            <div class="col align-self-end">
+        <tbody>
+
+            {% for contactform  in contactforms %}
+    
+            <tr>
+                <td  class="text-primary"scope="row">{{contactform.id}}</td>
+                <td class="text-primary">{{contactform.user_name}}</td>
+                <td class="text-primary">{{contactform.user_email}}</td>
+                <td class="text-primary">{{contactform.user_message}}</td>
+                <td>
+                    <a href="/admin/contactformdelete/{{contactform.id}}"> <i class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr>
+    
+            {% endfor %}
+        </tbody>
+    </thead>
+    <tbody>
+    </div>
+</div>
+{% endblock %}

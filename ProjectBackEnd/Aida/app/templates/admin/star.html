@@ -1,0 +1,68 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container bg-dark bg-gradient">
+<hr>
+<div class="row">
+<h3 class="text-primary" >Add Testimional  heading  </h3>
+<div class="col-12  ">
+<form action="/admin/star" method='POST' enctype="multipart/form-data" >
+    <input type="text" class="form-control my-2" name="testi_heading" placeholder="heading" >
+    <input type="text" class="form-control my-2" name="testi_desc" placeholder="desc" >
+    <input type="file" class="form-control my-2" name="testi_slider_img" placeholder="slider img" >
+    <input type="text" class="form-control my-2" name="testi_slider_head" placeholder="slider head" >
+    <input type="text" class="form-control my-2" name="testi_slider_desc" placeholder="slider desc" >
+    
+    
+    <input type="submit" class="btn btn-primary btn-lg" value="Add Testimional  heading ">
+    <hr>
+</form>
+</div>
+<hr>
+<div class="col-12">
+<h3 class="text-warning"> Testimional  Heading </h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>heading</th>
+            <th>desc</th>
+            <th>slider img</th>
+            <th>slider head</th>
+            <th>slider desc</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <hr>
+</div>
+<div class="col align-self-end">
+    </table>
+    <tbody>
+        {% for star in stars %}
+
+        <tr>
+            <td>
+            <td class="text-primary" scope="row">{{star.id}}</td>
+            <td class="text-primary">{{star.testi_heading}}</td>
+            <td class="text-primary">{{star.testi_desc}}</td>
+            <td class="text-primary">{{star.testi_slider_img}}</td>
+            <td class="text-primary">{{star.testi_slider_head}}</td>
+            <td class="text-primary">{{star.testi_slider_desc}}</td>
+            
+ 
+            <td>
+                <a href="/admin/stardelete/{{star.id}}"> <i class="fas fa-trash-alt"></i></a>
+                <a href="/admin/starupdate/{{star.id}}"> <i class="fas fa-edit"></i></a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+     </div>
+   </div>
+</div>
+
+
+{% endblock %}
+

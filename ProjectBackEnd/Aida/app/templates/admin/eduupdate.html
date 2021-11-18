@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container-sm">
+<hr>
+<h3 class="text-primary"> Update Education </h3>
+<form action="/admin/eduupdate/{{edu.id}}" method='POST'>
+<input type="text"  class="form-control my-2" name="start_date" value="{{edu.start_date}}"  placeholder=" start date " > 
+<input type="text"  class="form-control my-2" name="end_date" value="{{edu.end_date}}"  placeholder=" end date " >    
+<input type="text"  class="form-control my-2" name="edu_heading" value="{{edu.edu_heading}}"  placeholder=" heading " >
+<input type="text"  class="form-control my-2" name="edu_desc" value="{{edu.edu_desc}}"  placeholder=" desc " >
+<input type="submit" class="btn btn-primary btn-lg" value="Update edu ">
+<hr>
+</form>
+</div>
+{% endblock %}

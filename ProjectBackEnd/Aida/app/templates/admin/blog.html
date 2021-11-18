@@ -1,0 +1,62 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container bg-dark bg-gradient">
+<hr>
+<div class="row">
+<h3 class="text-primary"> Add Blog</h3>
+<div class="col-12">
+<form action="/admin/blog" method='POST'enctype="multipart/form-data">
+    <input type="file" class="form-control my-2" name="blog_img">
+    <input type="text" class="form-control my-2" name="blog_img_url" placeholder=" img url">
+    <input type="text" class="form-control my-2" name="blog_desc" placeholder="  desc">
+    <input type="text" class="form-control my-2" name="blog_read_more_url" placeholder=" read more link">
+    <input type="text" class="form-control my-2" name="blog_date" placeholder=" date">
+    <input type="submit" class="btn btn-primary btn-lg" value="Add blog">
+<hr>
+</form>
+<hr>
+<h3 class="my-3"> Portfolio</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-warning" >id</th>
+            <th class="text-warning" > img</th>
+            <th class="text-warning" > img url</th>
+            <th class="text-warning" >  desc</th>
+            <th class="text-warning" >url </th>
+            <th class="text-warning" >date </th>
+            <th class="text-warning" >Actions</th>
+        </tr>
+    </thead>
+    <hr>
+    </div>
+    <div class="col align-self-end">
+    <tbody>
+        {% for blog in blogs %}
+
+        <tr>
+            <td class="text-primary" scope="row">{{blog.id}}</td>
+            <td class="text-primary">{{blog.blog_img}}</td>
+            <td class="text-primary">{{blog.blog_img_url}}</td>
+            <td class="text-primary">{{blog.blog_desc}}</td>
+            <td class="text-primary">{{blog.blog_read_more_url}}</td>
+            <td class="text-primary">{{blog.blog_date}}</td>
+
+           
+            <td>
+                <a href="/admin/blogdelete/{{blog.id}}"> <i class="fas fa-trash-alt"></i></a>
+                <a href="/admin/blogupdate/{{blog.id}}"> <i class="fas fa-edit"></i></a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+     </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

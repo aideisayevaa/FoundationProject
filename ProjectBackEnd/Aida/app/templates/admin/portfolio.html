@@ -1,0 +1,59 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container bg-dark bg-gradient">
+<hr>
+<div class="row">
+<h3 class="text-primary"> Add Portfolio</h3>
+<div class="col-12">
+<form action="/admin/portfolio" method='POST'enctype="multipart/form-data">
+    <input type="file" class="form-control my-2" name="portfolio_img">
+    <input type="text" class="form-control my-2" name="portfolio_img_head" placeholder=" img head">
+    <input type="text" class="form-control my-2" name="portfolio_img_desc" placeholder=" img desc">
+    <input type="text" class="form-control my-2" name="portfolio_img_link" placeholder=" img link">
+    <input type="submit" class="btn btn-primary btn-lg" value="Add Portfolio">
+<hr>
+</form>
+<hr>
+<h3 class="my-3"> Portfolio</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-warning" >id</th>
+            <th class="text-warning" > img</th>
+            <th class="text-warning" > img head</th>
+            <th class="text-warning" > img desc</th>
+            <th class="text-warning" >url </th>
+            <th class="text-warning" >Actions</th>
+        </tr>
+    </thead>
+    <hr>
+    </div>
+    <div class="col align-self-end">
+    <tbody>
+        {% for link in links %}
+
+        <tr>
+            <td class="text-primary" scope="row">{{link.id}}</td>
+            <td class="text-primary">{{link.portfolio_img}}</td>
+            <td class="text-primary">{{link.portfolio_img_head}}</td>
+            <td class="text-primary">{{link.portfolio_img_desc}}</td>
+            <td class="text-primary">{{link.portfolio_img_link}}</td>
+
+           
+            <td>
+                <a href="/admin/portfoliodelete/{{link.id}}"> <i class="fas fa-trash-alt"></i></a>
+                <a href="/admin/portfolioupdate/{{link.id}}"> <i class="fas fa-edit"></i></a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+     </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

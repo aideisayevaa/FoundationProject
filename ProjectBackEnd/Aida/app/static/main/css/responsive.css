@@ -1,0 +1,449 @@
+@media (max-width:576px) {
+
+    .navbar-menu {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 66px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #1e163b;
+        overflow: hidden;
+        transition: .5s ease;
+        z-index: 9;
+    }
+
+    .navbar-menu li {
+        display: none;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .navbar-menu li a {
+        font-size: 18px;
+    }
+
+
+    input[type="checkbox"]:checked~.navbar-menu li {
+        display: block;
+    }
+
+    .icon-burger {
+        display: block;
+    }
+
+
+    .second-text {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .col-2 .icons {
+        display: none;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+
+    .navbar {
+        padding: 0;
+    }
+
+    .nav-logo img {
+        width: 149%;
+    }
+
+    .header-content p {
+        width: 91%;
+    }
+
+    .header-content h1 {
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-photo img {
+        width: 98%;
+        margin: 20px;
+    }
+
+
+    .hobbies {
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+    }
+
+    .hobby {
+        width: 100%;
+    }
+
+    #counter {
+        height: 375px;
+    }
+
+    .counter {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .offer {
+        grid-template-columns: 1fr;
+    }
+
+    .offer-item {
+        padding: 40px 35px;
+    }
+
+    .participation {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .participation:nth-child(4) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .participation::after {
+        left: -104.5%;
+    }
+
+    .participation-item::after {
+        left: -19px;
+        top: -31%;
+    }
+
+    .participation-item-second::after {
+        left: -4.5%;
+        top: 53%;
+    }
+
+    .participation-item::after {
+        left: -19px;
+        top: -28%;
+    }
+
+    .participation .justify-content-end {
+        justify-content: flex-start;
+    }
+
+    .participation-date p {
+        width: 34%;
+        padding: 15px 14px;
+    }
+
+    .portfolios {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-buttons ul li {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+
+    .testimonials-full {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 20px;
+    }
+
+    .form {
+        padding: 18px 17px;
+    }
+
+    .message {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .hireme {
+        text-align: center;
+    }
+
+    .hireme .second-text {
+        color: #A4A4A4;
+    }
+
+    .footer img {
+        width: 37%;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .second-text {
+        width: 75%;
+        font-size: 15px;
+    }
+
+    .col-2 .icons {
+        display: none;
+    }
+
+    .icon-burger {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+        /* float: none;
+        position: fixed;
+        z-index: 9;
+        left: 6%;
+        top: 95px;
+        width: 90%;
+        height: auto;
+        background-color: #2b2b24be;
+        transition: .5s ease; */
+    }
+
+    /* 
+    .nav-menu li {
+        padding: 20px;
+        border-bottom: 1px solid var(--gray);
+        cursor: pointer;
+    }
+    .nav-menu li a {
+        font-size: 18px;
+        color: var(--white);
+    }
+    .nav-menu li:hover a {
+        color: var(--dark-gold)
+    }
+    input[type="checkbox"]:checked+.nav-menu {
+        display: block
+    }
+    .icon-burger {
+        display: block;
+    } */
+
+    .navbar {
+        padding: 0;
+    }
+
+    .nav-logo img {
+        width: 149%;
+    }
+
+    .header-content p {
+        width: 61%;
+    }
+
+    .header-content h1 {
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-photo img {
+        width: 84%;
+        margin: 20px;
+    }
+
+
+    .hobbies {
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+    }
+
+    .hobby {
+        width: 100%;
+    }
+
+    #counter {
+        height: 375px;
+    }
+
+    .counter {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .offer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .offer-item {
+        padding: 57px 35px;
+        width: 70%;
+    }
+
+    .participation-date p{
+        width: 52%;
+    }
+
+    .portfolios {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-buttons ul li {
+        font-size: 17px;
+        margin: 0 5px;
+    }
+
+    .testimonials-full {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-photo {
+        text-align: center;
+    }
+
+    .testimonials-photo img {
+        width: 53%;
+        border-radius: 31%;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 20px;
+    }
+
+    .form {
+        padding: 18px 17px;
+    }
+
+    .message {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .hireme {
+        text-align: center;
+    }
+
+    .hireme .second-text {
+        color: #A4A4A4;
+    }
+
+    .footer img {
+        width: 24%;
+    }
+
+
+}
+
+@media (min-width:768px) and (max-width:992px) {
+
+    .col-2 .icons {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .icon-burger {
+        display: block;
+    }
+
+    .nav-logo img {
+        width: 129%;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    .hobbies {
+        padding: 20px 0px;
+    }
+
+    .hobby {
+        width: 96%;
+    }
+
+    #counter {
+        height: 375px;
+    }
+
+    .counter {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .offer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .offer-item {
+        padding: 40px 35px;
+    }
+
+    .participation-date p {
+        width: 41%;
+    }
+
+    .portfolios {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    #testimonials {
+        display: none;
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1200px) {}

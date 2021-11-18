@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container-sm">
+<hr>
+<h3 class="text-primary">Offer Update</h3>
+<form action="/admin/offerupdate/{{offer.id}}" method='POST'>
+<input type="text" class="form-control my-2" name="offer_icon_name" placeholder=" icon name" value="{{offer.offer_icon_name}}">
+<input type="text" class="form-control my-2" name="offer_icon" placeholder=" icon" value="{{offer.offer_icon}}">
+<input type="text" class="form-control my-2" name="offer_back_icon" placeholder="back_icon " value="{{offer.offer_back_icon}}">
+<input type="text" class="form-control my-2" name="offer_heading" placeholder="heading" value="{{offer.offer_heading}}">
+<input type="text" class="form-control my-2" name="offer_desc" placeholder=" desc" value="{{offer.offer_desc}}">
+<input type="submit" class="btn btn-primary btn-lg" value=" Offer  Update">
+<hr>
+</form>
+</div>
+
+{% endblock %}

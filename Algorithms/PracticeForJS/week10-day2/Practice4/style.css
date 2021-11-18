@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 4rem auto 0 auto;
+    height: 400px;
+    position: relative;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    /* display: grid; */
+    /* place-items: center; */
+    position: absolute;
+    transition: all 0.75s ease-in-out;
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.slider h1 {
+    top: 45%;
+    left: 50%;
+    color: aliceblue;
+    position: absolute;
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    width: 200px;
+}
+
+.buttons button {
+    border: 1px solid rgb(87, 76, 76);
+    background-color: transparent;
+    padding: 10px;
+    color: rgb(41, 41, 41);
+    border-radius: 50%;
+    font-size: 24px;
+    outline: none;
+}
+/* .slider:nth-child(1) {
+        left: 0;
+       
+}
+.slider:nth-child(2) {
+    left: 100%;
+}
+.slider:nth-child(3) {
+    left: 200%;
+}
+.slider:nth-child(4) {
+    left: 300%;
+}
+.slider {
+    transform: translateX(0%);
+}
+*/
+
+.row {
+    max-width: 1000px;
+    margin: auto;
+    height: 200px;
+    display: flex;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Six columns side by side */
+
+.column {
+    width: 25%;
+}
+
+.column img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/* Add a transparency effect for thumnbail images */
+/* .demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+} */

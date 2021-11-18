@@ -1,0 +1,13 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container-sm">
+<hr>
+<h3 class="text-primary"> Update About skill</h3>
+<form action="/admin/aboutskillupdate/{{skill.id}}" method='POST' enctype="multipart/form-data">
+<input type="text"  class="form-control my-2" name="skill_name" value="{{skill.skill_name}}"  placeholder=" skill name " >
+<input type="submit" class="btn btn-primary btn-lg" value="Update  about skill ">
+<hr>
+</form>
+</div>
+{% endblock %}

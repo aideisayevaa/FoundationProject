@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container-sm">
+<hr>
+<h3 class="text-primary"> Update Testimonial Heading</h3>
+<form action="/admin/starupdate/{{star.id}}" method='POST' enctype="multipart/form-data" >
+<input type="text"  class="form-control my-2" name="testi_heading" value="{{star.testi_heading}}"  placeholder="heading  " >
+<input type="text"  class="form-control my-2" name="testi_desc" value="{{star.testi_desc}}"  placeholder="desc  " >
+<input type="file"  class="form-control my-2" name="testi_slider_img" value="{{star.testi_slider_img}}"  placeholder="slider img   " >
+<input type="text"  class="form-control my-2" name="testi_slider_head" value="{{star.testi_slider_head}}"  placeholder=" slider head  " >
+<input type="text"  class="form-control my-2" name="testi_slider_desc" value="{{star.testi_slider_desc}}"  placeholder="slider desc   " >
+<input type="submit" class="btn btn-primary btn-lg" value="Update Testimonial Heading">
+<hr>
+</form>
+</div>
+{% endblock %}

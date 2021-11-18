@@ -1,0 +1,13 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container-sm">
+<hr>
+<h3 class="text-primary"> Update About Img</h3>
+<form action="/admin/aboutimgupdate/{{post.id}}" method='POST' enctype="multipart/form-data">
+<input type="file"  class="form-control my-2" name="about_img" value="{{post.about__img}}"  placeholder="  img" >
+<input type="submit" class="btn btn-primary btn-lg" value="Update img">
+<hr>
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container-sm">
+<hr>
+<h3 class="text-primary"> Update profile txt</h3>
+<form action="/admin/profiletxtupdate/{{profiletxt.id}}" method='POST'>
+<input type="text"  class="form-control my-2" name="profile_txt" value="{{profiletxt.profile_txt}}"  placeholder=" txt " >
+<input type="submit" class="btn btn-primary btn-lg" value="Update profile txt">
+<hr>
+</form>
+</div>
+{% endblock %}

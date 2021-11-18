@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            border: none;
+            background: none;
+            box-shadow: 0px 0px 5px gray;
+            padding: 10px 30px;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+        
+        .btn:hover {
+            background: darkgray;
+            color: white
+        }
+        
+        .box {
+            height: 200px;
+            background: red;
+            transition: all .3s ease;
+        }
+        
+        .boxes {
+            width: 1000px;
+            height: 200px;
+            overflow: hidden;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <button class='btn btnLeft' onclick='moveLeft()'>Move Left</button>
+    <button class="btn btnRight" onclick='moveRight()'>Move Right</button>
+
+    <div class="boxes">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+
+    <script src="js/ball.js"></script>
+</body>
+
+</html>

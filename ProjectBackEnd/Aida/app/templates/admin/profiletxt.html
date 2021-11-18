@@ -1,0 +1,53 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container bg-dark bg-gradient">
+<hr>
+<div class="row">
+<h3 class="text-primary" >Add Profile txt</h3>
+<div class="col-12  ">
+<form action="/admin/profiletxt" method='POST'>
+    <input type="text" class="form-control my-2" name="profile_txt">
+    <input type="submit" class="btn btn-primary btn-lg" value="Add  profile txt">
+    <hr>
+</form>
+</div>
+<hr>
+<div class="col-12">
+<h3 class="text-warning"> txt</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Profile_txt</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <hr>
+</div>
+<div class="col align-self-end">
+    </table>
+    <tbody>
+        {% for profiletxt in profiletxts %}
+
+        <tr>
+            <td>
+            <td class="text-primary" scope="row">{{profiletxt.id}}</td>
+            <td class="text-primary">{{profiletxt.profile_txt}}</td>
+ 
+            <td>
+                <a href="/admin/profiletxtdelete/{{profiletxt.id}}"> <i class="fas fa-trash-alt"></i></a>
+                <a href="/admin/profiletxtupdate/{{profiletxt.id}}"> <i class="fas fa-edit"></i></a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+     </div>
+   </div>
+</div>
+
+
+{% endblock %}
+

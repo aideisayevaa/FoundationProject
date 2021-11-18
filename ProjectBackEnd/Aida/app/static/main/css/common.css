@@ -1,0 +1,147 @@
+.flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.align-items-start{
+    align-items: flex-start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+/* Text */
+
+.text-primary {
+    color: #E54B4B;
+}
+
+.first-text {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 26px;
+    color: white;
+}
+
+.second-text {
+    font-size: 17px;
+    color: #b4c2d6;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+    width: 57%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.third-text {
+    font-size: 17px;
+    color: #b4c2d6;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+}
+
+
+.fourth-text {
+    margin: 20px 0;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    transition: .5s ease;
+}
+
+/* Button */
+
+.btn {
+    transition: .5s ease;
+    color: white;
+    background: #E54B4B;
+    border: none;
+    border-radius: 11px;
+    padding: 13px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 26px 0;
+    box-shadow: -1px 0px 16px -5px rgba(255, 143, 143, 0.75);
+    -webkit-box-shadow: -1px 0px 16px -5px rgba(255, 143, 143, 0.75);
+    -moz-box-shadow: -1px 0px 16px -5px rgba(255, 143, 143, 0.75);
+}
+
+.btn:hover {
+    background: red;
+}
+
+
+/* Margin Padding */
+
+.section-padding {
+    padding: 70px 0;
+}
+
+/* Icons */
+
+.icons .fab {
+    border: 1px solid white;
+    cursor: pointer;
+    background: none;
+    color: white;
+    border-radius: 9px;
+    margin: 0 2px;
+    text-align: center;
+    font-size: 13px;
+    padding: 9px;
+    transition: .5s ease;
+}
+
+.icons .fab:hover {
+    background: #e54b4b;
+    border: 1px solid #e54b4b;
+}
+
+.icons .fa-facebook-f {
+    padding: 9px 11px;
+}
+
+.icons:hover .icons i {
+    background-color: white;
+}

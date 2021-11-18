@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons{
+    margin: 30px 0;
+}
+
+.btn{
+    border: none;
+    background-color: aquamarine;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn:hover{
+    background-color: gray;
+}
+
+.boxs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.box{
+    padding: 20px;
+    font-size: 20px;
+    background-color: greenyellow;
+    display: none;
+}
+
+.show{
+    display: block;
+}

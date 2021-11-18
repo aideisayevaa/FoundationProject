@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../static/main/css/common.css">
+    <link rel="stylesheet" href="../../static/main/css/layout.css">
+    <link rel="stylesheet" href="../../static/main/css/style.css">
+    <link rel="stylesheet" href="../../static/main/css/responsive.css">
+    <title>My-Portfolio</title>
+</head>
+
+<body>
+    <!-- Header section start -->
+    <section id="header">
+        <div id="particles-js"></div>
+        <div class="header-overlay">
+            <div id="myNavbar" class="row navbar">
+                <div class="col-2">
+                    <div class="nav-logo">
+                    {% for logo in logos   %}
+                    <img src="/static/uploads/{{logo.logo_img}}" alt="">
+                    {% endfor %}
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="nav-menu flex justify-content-around">
+                        <input id="nav-toggle" type="checkbox">
+                        <ul class="navbar-menu flex">
+                            <input id="nav-toggle" type="checkbox">
+                            <li><a href="#header">Ana Səhifə</a></li>
+                            <li><a href="#offer">Xidmətlər</a></li>
+                            <li><a href="#participation">Təhsil</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#blogs">Məqalələr</a></li>
+                            <li><a href="#contact">Əlaqə</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                  
+                <div class="col-2 flex justify-content-end">
+               {%  for icon in icons  %}
+                    <div class="icons">
+                <a href="{{icon.nav_icon_url}}"><i class="{{icon.nav_icon}}"></i></a>
+                    </div>  
+                    {% endfor %}
+
+                    <label for="nav-toggle" class="icon-burger">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="container-full">
+                <div class="row">
+                    <div class="col-12">
+                        <div
+                            class="header-content flex justify-content-center align-items-center flex-direction-column">
+                            <div class="header-photo flex justify-content-center">
+                                {% for profile in profiles  %}
+                                <img src="/static/uploads/{{profile.profile_img}}" alt="">
+                              {%  endfor %}
+                            </div>
+                            <!-- <div class="header-content-text">
+                                <p>Mən, </p>
+                                <span is="type-async" id="type-text"> Frontend Proqramçı</span>
+                                <span class="blinking-cursor"></span>
+                            </div> -->
+
+                             <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div> 
+                             {%  for profiletxt in profiletxts %}
+                            <p class="second-text">{{profiletxt.profile_txt}}</p>
+                            {%  endfor %}
+                            <a href="#"><button class="btn">CV Yüklə<i class="fas fa-download"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header section end -->
+
+    <!-- About section start -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about">
+                {%  for post in posts %}
+                <div class="about-photo flex justify-content-center align-items-center">
+                    <img src="/static/uploads/{{post.about_img}}" alt="">
+                </div>
+                {% endfor %}
+
+                <div class="about-content flex justify-content-center align-items-start flex-direction-column">
+                    <h2>HAQQIMDA</h2>
+                    {% for abouthead in aboutheads %}
+                    <p class="third-text">{{abouthead.about_heading}}
+                    </p><br><br>
+                    {% endfor  %}
+
+
+                    <span class="about-text">Biliklər :</span>
+                    <div class="about-buttons">
+                        {% for skill in skills %}
+                        <button class="btn-about">{{skill.skill_name}}</button>
+                        {% endfor %}
+                    </div>
+                  <a href="#portfolio"><button class="btn">Portfolio</button></a>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Hobbies section start -->
+    <section id="hobbies">
+        <div class="container">
+            <div class="hobbies-title flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">HOBBİLƏR VƏ MARAQLAR</h2>
+                <p class="second-text">Obviously I'm a Web Designer. Experienced with all stages of the development
+                    cycle for dynamic web
+                    projects.</p>
+            </div>
+            <div class="hobbies">
+                  {% for hobby in hobbys %}
+                <div class="hobby">
+                    <div class="hobby-icon">
+                        <i class="{{hobby.hobby_icon}}"></i>
+                    </div>
+                    <div class="hobby-text">{{hobby.hobby_desc}}</div>
+                </div>
+             {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Hobbies section end -->
+
+    <!-- Counter section start -->
+    <section id="counter" class="section-padding">
+        <div class="container">
+            <div class="counter">
+                {% for info in infos     %}
+                <div class="counter-item">
+                    <i class="icon {{info.counter_icon}}"></i>
+                    <h5 class="counter-value">{{info.counter_count}}</h5>
+                    <span>{{info.counter_txt}}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Counter section end -->
+
+    <!-- Offer section start -->
+    <section id="offer" class="section-padding">
+        <div class="container">
+            <div class="offer-title flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">NƏ TƏKLİF EDİRƏM ?</h2>
+                <p class="second-text">Obviously I'm a Web Designer. Experienced with all stages of the development
+                    cycle for dynamic web projects.</p>
+            </div> 
+            {% for offer in offers %}
+            <div class="offer">
+                <div class="offer-item">
+                    <div class="offer-overlay"> <i class="icon {{offer.offer_icon}}"></i>
+                    </div>
+                    <div class="offer-item-box">
+                        <i class="{{offer.offer_back_icon}}"></i>
+
+                        <h4 class="fourth-text">{{offer.offer_heading}}</h4>
+                        <p class="third-text">{{offer.offer_desc}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+        </div>
+    </section>
+    <!-- Offer section end -->
+
+    <!-- Participation section start -->
+    <section id="participation" class="section-padding">
+        <div class="container">
+            <div class="participation-title flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">Təhsil</h2>
+                <p class="second-text">Obviously I'm a Web Designer. Experienced with all stages of the development
+                    cycle for dynamic web projects.</p>
+            </div>
+            <div class="participation">
+                {%  for edu in edus %}
+                <div class="row">
+                    <div class="col-6">
+                        <div class="participation-date flex justify-content-end align-items-start">
+                            <p>{{edu.start_date}} - {{edu.end_date}}</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="participation-item">
+                            <h3 class="fourth-text">{{edu.edu_heading}}</h3>
+                            <p class="third-text">{{edu.edu_desc}}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Participation section end -->
+
+    <!-- Portfolio section start -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="portfolio-title flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">PORTFOLIO</h2>
+                <p class="second-text">Obviously I'm a Web Designer. Experienced with all stages of the development
+                    cycle for dynamic web projects.</p>
+            </div>
+            <div class="portfolios">
+                {% for link in links  %}
+                <div class="portfolio branding designing">
+                    <a href="{{link.portfolio_img_link}}">
+                        <img src="/static/uploads/{{link.portfolio_img}}" alt="">
+                        <!-- <div class="portfolio-overlay">
+                             <i class="fas fa-link"></i> 
+                        </div> -->
+                        <h4 class="fourth-text">{{link.portfolio_img_head}}</h4>
+                        <span>{{link.portfolio_img_desc}}</span>
+                    </a>
+                </div>
+                {%  endfor %}
+
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio section end -->
+
+    <!-- Testimonials section start -->
+    <section id="testimonials">
+        <div class="container-full">
+            <div class="testimonials-full">
+                <div class="testimonials-content">
+                    <div
+                        class="testimonials-title flex justify-content-center align-items-center flex-direction-column">
+                        <h2 class="first-text">RƏYLƏR</h2>
+                        <p class="third-text">Obviously I'm a Web Designer. Experienced with all stages of the
+                            development
+                            cycle for dynamic web projects.</p>
+                    </div>
+                    <div class="testimonials">
+                        {% for star in stars %}
+                        <div class="testimonials-item">
+                            <h6 class="fourth-text">"{{star.testi_heading}}"</h6>
+                            <p class="third-text">{{star.testi_desc}}
+                            <div class="author flex">
+                                <div class="col-2">
+                                    <div class="author-photo">
+                                        <img src="/static/uploads/{{star.testi_slider_img}}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-10 flex align-items-center">
+                                    <div class="author-content">
+                                        <h5 class="first-text">{{star.testi_slider_head}}</h5>
+                                        <span>{{star.testi_slider_desc}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor  %}
+                    </div>
+                    <div class="testimonials-circles flex justify-content-center">
+                        <div class="testimonials-circle" onclick="currentSlide(1)"></div>
+                        <div class="testimonials-circle" onclick="currentSlide(2)"></div>
+                        <div class="testimonials-circle" onclick="currentSlide(3)"></div>
+                    </div>
+                </div>
+                <div class="testimonials-photo">
+                    {% for test in tests %}
+                    <img src="/static/uploads/{{test.testimional_img}}" alt="">
+                    {%  endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials section end -->
+
+    <!-- Blogs section start -->
+    <section id="blogs" class="section-padding">
+        <div class="container">
+            <div class="blogs-title flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">LATEST NEWS & BLOG</h2>
+                <p class="second-text">Obviously I'm a Web Designer. Experienced with all stages of the development
+                    cycle for dynamic web projects.</p>
+            </div>
+            <div class="blogs">
+                {% for blog in blogs %}
+                <div class="blog">
+                    <a href="{{blog.blog_img_url}}">
+                        <img src="/static/uploads/{{blog.blog_img}}" alt="">
+                        <div class="blog-content">
+                            <h3 class="fourth-text">{{blog.blog_desc}}</h3>
+                            <div class="blog-line"></div>
+                            <div class="blog-footer flex justify-content-between">
+                               <a href="{{blog.blog_read_more_url}}">  <span>Read More ></span> </a>
+                                <span class="flex"><i class="far fa-calendar"></i>
+                                    <p>{{blog.blog_date}}</p>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {%  endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Blogs section end -->
+
+    <!-- Hireme section start -->
+    <section id="hireme">
+        <div class="container">
+            <div class="hireme flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">Freelancer Layihələri Üçün Hazıram.</h2>
+                <p class="second-text">Obviously I'm a Web Designer. Experienced with all stages of the development
+                    cycle for dynamic web projects.</p>
+                <button class="btn"><a href="#contact">Mənimlə əlaqə</a><i class="fa fa-chevron-down"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- Hireme section end -->
+
+    <!-- Contact section start -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="contact-title flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">ƏLAQƏ</h2>
+                <p class="second-text">Obviously I'm a Web Designer. Experienced with all stages of the development
+                    cycle for dynamic web projects.</p>
+            </div>
+            <div class="contact-content">
+                {% for endicon in endicons %}
+                <div class="contact-item">
+                    <a href="{{endicon.ct_link}}"><i class="{{endicon.ct_icon}}"></i></a>
+                    <h4 class="fourth-text">{{endicon.ct_heading}}</h4>
+                    <p class="third-text">{{endicon.ct_desc}}
+                    </p>
+                    <span>{{endicon.ct_txt}}</span>
+                </div>
+                {%  endfor %}
+            </div>
+            <form action="/admin/contactform"  method="post">
+       <div class="contact-form">
+                <input type="text" placeholder="Ad Soyad:" class="name form" id="name" name="user_name">
+                <input type="text" placeholder="Email:" class="email form"  id="email"  name="user_email">
+                <input type="text" placeholder="Başlıq:" class="subject form" name="user_subject" >
+                <textarea   cols="30" rows="10" placeholder="Mesajınız:" class="message"name="user_message" ></textarea>
+            </div>
+          
+            <div class="contact-btn flex justify-content-end">
+                <button class="btn">Mesaj göndər</button>
+            </div>
+              </form>
+        </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Footer section start -->
+    <section id="footer">
+        <div class="container-full">
+            <div class="footer flex justify-content-center align-items-center flex-direction-column">
+              {% for end in ends %}
+                <img src="/static/uploads/{{end.end_logo_img}}" alt="" class="w100">
+                <p class="second-text">{{end.end_logo_desc}}</p>   
+                {% endfor %}    
+                <div class="icons">
+                    {% for social in socials  %}
+                    <a href="{{social.social_icon_url}}"><i class="{{social.social_icon}}"></i></a>
+                    {% endfor %}
+                    </div> 
+            </div>
+            <div class="footer-line"></div>
+            <div class="flex justify-content-center">
+                <p class="second-text">© 2021 Cristino. Design with by Shreethemes.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section end -->
+
+
+    <script src="../../static/main/js/filter.js"></script>
+    <script src="../../static/main/js/testimonials.js"></script>
+    <script src="../../static/main/js/particles.js"></script>
+    <script src="../../static/main/js/app.js"></script>
+    <script src="../../static/main/js/navbar.js"></script>
+    <script src="../../static/main/js/text.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container bg-dark bg-gradient">
+<hr>
+<div class="row">
+<h3 class="text-primary" >Add about head</h3>
+<div class="col-12  ">
+<form action="/admin/abouthead" method='POST'>
+    <input type="text" class="form-control my-2" name="about_heading">
+    <input type="submit" class="btn btn-primary btn-lg" value="Add  about head">
+    <hr>
+</form>
+</div>
+<hr>
+<div class="col-12">
+<h3 class="text-warning"> txt</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>about_heading</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <hr>
+</div>
+<div class="col align-self-end">
+    </table>
+    <tbody>
+        {% for abouthead in aboutheads %}
+
+        <tr>
+            <td>
+            <td class="text-primary" scope="row">{{abouthead.id}}</td>
+            <td class="text-primary">{{abouthead.about_heading}}</td>
+ 
+            <td>
+                <a href="/admin/aboutheaddelete/{{abouthead.id}}"> <i class="fas fa-trash-alt"></i></a>
+                <a href="/admin/aboutheadupdate/{{abouthead.id}}"> <i class="fas fa-edit"></i></a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+     </div>
+   </div>
+</div>
+
+
+{% endblock %}
+

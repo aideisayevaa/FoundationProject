@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container-sm">
+<hr>
+<h3 class="text-primary">Social  Icon Update</h3>
+<form action="/admin/socialupdate/{{social.id}}" method='POST'>
+<input type="text" class="form-control my-2" name="social_icon_name" placeholder="icon name" value="{{social.social_icon_name}}">
+<input type="text" class="form-control my-2" name="social_icon" placeholder="icon " value="{{social.social_icon}}">
+<input type="text" class="form-control my-2" name="social_icon_url" placeholder="link " value="{{social.social_icon_url}}">
+<input type="submit" class="btn btn-primary btn-lg" value=" social Icon Update">
+<hr>
+</form>
+</div>
+
+{% endblock %}

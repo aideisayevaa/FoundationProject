@@ -1,0 +1,57 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<div class="container bg-dark bg-gradient">
+    <hr>
+    <div class="row">
+    <h3 class="text-primary">Add Counter </h3>
+    <div class="col-12">
+<form action="/admin/count" method='POST'>
+    <input type="text" class="form-control my-2"name="counter_icon_name"placeholder=" icon name">
+    <input type="text" class="form-control my-2"name="counter_icon"placeholder="icon">    
+    <input type="text" class="form-control my-2"name="counter_count"placeholder=" count"> 
+    <input type="text" class="form-control my-2"name="counter_txt"placeholder=" desc">       
+    <input type="submit" class="btn btn-primary btn-lg" value="Add Count">
+<hr>
+</form>
+<hr>
+<div class="col-12">
+<h3 class="text-warning"> Counter</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-warning" >id</th>
+            <th class="text-warning" > icon name </th>
+            <th class="text-warning" > icon </th>
+            <th class="text-warning" > count</th>
+            <th class="text-warning" > desc</th>
+            <th class="text-warning" >Actions</th>
+        </tr>
+    </thead>
+    <hr>
+</div>
+<div class="col align-self-end">
+    <tbody>
+        {% for info in infos %}
+
+        <tr>
+            <td  class="text-primary"  scope="row">{{info.id}}</td>
+            <td class="text-primary" >{{info.counter_icon_name}}</td>
+            <td class="text-primary" >{{info.counter_icon}}</td>
+            <td class="text-primary" >{{info.counter_count}}</td>
+            <td class="text-primary" >{{info.counter_txt}}</td>
+            <td>
+                <a href="/admin/countdelete/{{info.id}}"> <i class="fas fa-trash-alt"></i></a>
+                <a href="/admin/countupdate/{{info.id}}"> <i class="fas fa-edit"></i></a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}
